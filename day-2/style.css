@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerLeft {
+    height: 200vh;
+    width: 40%;
+    border: 1px solid red;
+}
+
+.containerRight {
+    height: 200vh;
+    width: 60%;
+    border: 1px solid red;
+    background-image: url(image.jpg);
+}
+
+#headigOfSignUp h2 {
+    width: 70%;
+    margin-left: 94px;
+    margin-top: -25px;
+}
+#backImg{
+    margin-top: 1px;
+}
+#logo {
+    width: 200px;
+    height: 103px;
+    margin-left: 65px;
+}
+
+#inputSection {
+    height: 527px;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+#inputSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+#inputSection form input,
+#givenId {
+    padding: 15px;
+}
+
+#givenId {
+    width: 94%;
+}
+
+#SubmitBtn {
+    padding: 15px;
+    width: 100%;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#inputSection form input:nth-child(7) {
+    padding: 0px;
+    cursor: pointer;
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+#togglePassword {
+
+    cursor: pointer;
+    margin-top: -64px;
+    margin-left: 438px;
+}
+
+#logInformSignUp {
+    height: 70px;
+    border: 1px solid blue;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    cursor: pointer;
+}
+
+#logInformSignUp h4 {
+    margin-left: 10px;
+}
+
+#logInformSignUp img {
+    width: 47px;
+    height: 40px;
+    margin-left: 52px;
+    margin-top: 17px;
+}
+
+#RightContainerMain {
+    height: 700px;
+    width: 70%;
+    /* border: 1px solid red; */
+    margin-left: 143px;
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+
+}
+
+#RightContainerMainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#RightContainerMainContent div {
+    display: flex;
+    gap: 20px;
+}
+
+        .popup{
+            width: 400px;
+            background-color: aqua;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 5px 30px 30px;
+            visibility: hidden;
+            transition: transform 0,4s top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .popup img{
+            width: 76px;
+          border-radius: 50%;
+        }
+        .popup button{
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px;
+            border-color: rgb(21, 198, 86);
+            border: 0;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }

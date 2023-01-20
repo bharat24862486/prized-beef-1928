@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/day-4/checkout.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <img src="https://document-export.canva.com/qpjs0/DAFX6Lqpjs0/20/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230116%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230116T153833Z&X-Amz-Expires=71371&X-Amz-Signature=f453aafd9e85acf7887b2df2e8ca7e75857f82ac11ebd5b0dfe805cc3a7bd24e&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2017%20Jan%202023%2011%3A28%3A04%20GMT"
+                alt="">
+            <div>
+                <img src="/day-3/icons8-lock-24.png" alt="">
+                <h5 id="cheOut">CHECKOUT</h5>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="mainSectoin">
+        <div class="container1">
+            <div id="backToMainPage">
+                <h3><img src="https://www.autozone.com/images/arrow-left-orange.svg" alt=""> BACK TO CART </h3>
+                <div class="vl"></div>
+                <div id="quantityOfProduct">
+                    <h4>1 Product</h4>
+                </div>
+            </div>
+            <div id="CustomarId">
+                <img id="suceessImg" src="https://www.autozone.com/images/progressIndicatorComplete.svg" alt="">
+                <h5> Customer Information</h5>
+            </div>
+            <div id="customarDeteals">
+                <H6>WELCOME BACK SOURAV SARKAR!</H6>
+            </div>
+            <div id="deliveryOption">
+                <h5>Delivery Options</h5>
+            </div>
+            <div id="suggestration">
+                <h6>You'll pick up this item at the store:</h6>
+            </div>
+            <div class="prductContainer">
+                <div id="prductContainerChild1">
+                    <div id="prductContainerChildForAppend"></div>
+                    <button><a href="/day-4/checkout2.html">CONTINUE</a></button>
+                </div>
+                <div id="prductContainerChild2">
+                    <div id>
+                        <div>
+                            <h5>Pick Up Instructions</h5>
+                            <p>4394 Summer Ave
+                                Memphis, TN 38122
+                                901-761-0514
+                            </p>
+                            <h4>OPEN Until Midnight</h4>
+                        </div>
+
+                        <div>
+                            <img src="https://www.autozone.com/images/pick_up_icon.svg" alt="">
+                        </div>
+
+                    </div>
+                    <p id="para">Be sure to bring your photo ID, the credit card used to pay for the order, and your
+                        ready-for-pick-up email. Remember that only the person who placed the order can pick it up.
+                        Thanks for shopping with us!</p>
+                </div>
+
+            </div>
+            <div id="payment-rewards">
+                <h3>
+                    Payment & Rewards
+                </h3>
+            </div>
+            <div id="payment-rewards">
+                <h3>
+                    Billing Address
+                </h3>
+            </div>
+        </div>
+        <div class="container2">
+            <h2 style="margin-left: 20px; margin-top:10px ;">ORDER SUMMARY</h2>
+            <hr color="orange" style="width: 40%; margin-left: 25px;">
+            <br>
+            <div class="item-total">
+                <pre> Item(s) Subtotal           $17.98</pre>
+                <pre>Taxes                       $1.9</pre>
+            </div>
+            <br>
+            <form action="" >
+                <input type="text" type="number" name="" id="promocode" placeholder="Enter Promot Code">
+                <button id="promoApplyBtn">Apply</button>
+            </form>
+            <br>
+            <h2 style="margin-left: 10px;" id="totalPric">
+                <pre>Total -             $ 9.5</pre>
+            </h2>
+            <button id="purches-btn"><h5>COMPLETE PURCHES</h5></button>
+        </div>
+    </div>
+</body>
+<script>
+    let data = JSON.parse(localStorage.getItem("cart"));
+    
+    function apenddataContainer(data){
+        document.getElementById("prductContainerChildForAppend").innerHTML="";
+        data.forEach(element => {
+           let div = document.createElement("div");
+           
+           let img =document.createElement("img");
+
+           let title = document.createElement("p");
+
+           let quantiy = document.createElement("p");
+
+           let price = document.createElement("p");
+
+           div.append(img,title,quantiy,price);
+           document.getElementById("prductContainerChildForAppend").append(div);
+        });
+    }
+
+    document.querySelector("#promoApplyBtn").addEventListener("click",(e)=>{
+        e.preventDefault()
+        let value = document.querySelector("#promocode").value;
+        console.log(value);
+    })
+
+    let total_price = data.reduce((acc,item)=>{
+        acc+=item.price;
+    },0)
+
+
+</script>
+</html>

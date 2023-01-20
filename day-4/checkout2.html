@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/day-4/checkout.css">
+    <style>
+        #productConaierMain {
+            width: 421px;
+            height: 185px;
+            border: 1px solid red;
+            margin-left: 33px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+
+        #id-rewares {
+            width: 100%;
+            height: 190px;
+            /* border-radius: 4px; */
+            background-color: white;
+            /* border: 1px solid black; */
+        }
+
+        #id-rewares h5,
+        h6,
+        p {
+            margin-left: 61px;
+            margin-top: 14px;
+        }
+
+        #payment_Option_deteals {
+            width: 100%;
+            height: 450px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            background-color: white;
+        }
+
+        #Card_Merchandise {
+            width: 98%;
+            height: 56px;
+            border: 1px solid black;
+            margin-top: 11px;
+            margin-left: 9px;
+            display: flex;
+            gap: 286px;
+        }
+
+        #Card_Merchandise div {
+            display: flex;
+        }
+
+        #Card_Merchandise div:nth-child(1) img {
+            margin-left: 3px;
+        }
+
+        #Card_Merchandise div img {
+            width: 20px;
+            margin-right: -45px;
+            margin-top: -6px;
+        }
+
+        #card_deteals {
+            width: 100%;
+            height: 134px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+
+        #Card_Merchandise2 {
+            width: 98%;
+            height: 56px;
+            /* border: 1px solid black; */
+            margin-top: 11px;
+            margin-left: 9px;
+            display: flex;
+            gap: 630px;
+        }
+
+        #Card_Merchandise2 div {
+            display: flex;
+        }
+
+        #Card_Merchandise2 div img {
+            width: 30px;
+        }
+
+        #Card_Merchandise2 div:nth-child(1) img {
+            margin-right: -51px;
+            margin-left: 2px;
+        }
+
+        #card_deteals form {
+            gap: 10px;
+            display: flex;
+        }
+
+        #Submit_btn {
+            width: 259px;
+            margin-top: 18px;
+            padding: 14px;
+            margin-left: 24px;
+            cursor: pointer;
+        }
+        #pay-pal{
+            width: 100%;
+            height: 53px;
+            border: 1px solid black;
+            display: flex;
+        }
+        #pay-pal div{
+            display: flex;
+        }
+        #pay-pal div p{
+            margin-left: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <img src="https://document-export.canva.com/qpjs0/DAFX6Lqpjs0/20/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230116%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230116T153833Z&X-Amz-Expires=71371&X-Amz-Signature=f453aafd9e85acf7887b2df2e8ca7e75857f82ac11ebd5b0dfe805cc3a7bd24e&X-Amz-SignedHeaders=host&response-expires=Tue%2C%2017%20Jan%202023%2011%3A28%3A04%20GMT"
+                alt="">
+            <div>
+                <img src="/day-3/icons8-lock-24.png" alt="">
+                <h5 id="cheOut">CHECKOUT</h5>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="mainSectoin">
+        <div class="container1" style="height: 1000px;">
+            <div id="backToMainPage">
+                <h3><img src="https://www.autozone.com/images/arrow-left-orange.svg" alt=""> BACK TO CART </h3>
+                <div class="vl"></div>
+                <div id="quantityOfProduct">
+                    <h4>1 Product</h4>
+                </div>
+            </div>
+            <div id="CustomarId">
+                <img id="suceessImg" src="https://www.autozone.com/images/progressIndicatorComplete.svg" alt="">
+                <h5> Customer Information</h5>
+            </div>
+            <div id="customarDeteals">
+                <H6>WELCOME BACK SOURAV SARKAR!</H6>
+            </div>
+            <div id="deliveryOption">
+                <h5>Delivery Options</h5>
+            </div>
+            <div id="suggestration">
+                <h6>You'll pick up this item at the store:</h6>
+            </div>
+            <div class="prductContainer" style="height: 254px;">
+                <div id="productConaierMain"></div>
+
+            </div>
+            <div id="id-rewares">
+                <h5>
+                    THE CAR GUY REWARDS
+                </h5>
+                <hr style="width: 90%;">
+                <p>This purchase does not yet qualify to earn Rewards credit.</p>
+                <h6>Spend an additional $20 to qualify.</h6>
+                <p>This purchase will be applied to the following ID: ************9606</p>
+                <hr style="width: 90%;">
+                <p><img src="https://www.autozone.com/images/notification/icon-caution.svg" alt=""> AutoZone Rewards
+                    Credits can't be redeemed for In-Store Pick Up or Same Day Delivery orders.</p>
+            </div>
+            <div id="payment_Option_deteals">
+                <h3>Payment Information</h3>
+                <hr style="width: 97%; margin: auto;">
+                <div id="Card_Merchandise">
+                    <div>
+                        <img src="https://www.autozone.com/images/credit-card-icon2.svg" alt="">
+                        <p><b>Gift Card & Merchandise Credit</b></p>
+                    </div>
+                    <div>
+                        <img src="https://www.autozone.com/images/notification/icon-caution.svg" alt="">
+                        <p>Not available for In-Store Pick Up or Same Day Delivery orders.</p>
+                    </div>
+                </div>
+                <div id="card_deteals">
+                    <div id="Card_Merchandise2">
+                        <div>
+                            <img src="https://www.autozone.com/images/credit-card-icon2.svg" alt="">
+                            <p><b>Credit/Debit Card</b></p>
+                        </div>
+                        <div>
+                            <p>We accept:</p>
+                            <img src="https://www.autozone.com/images/visa-2.svg" alt="">
+                            <img src="https://www.autozone.com/images/master-card-3.svg" alt="">
+                            <img src="https://www.autozone.com/images/discover-2.svg" alt="">
+                            <img src="https://www.autozone.com/images/amex-3.svg" alt="">
+
+                        </div>
+                    </div>
+                    <form action="">
+                        <input type="number" id="cardNumber" style="width: 40%;" placeholder="Card Number">
+                        <input type="date" name="" id="expData" style="width: 25%;" placeholder="Date">
+                        <input type="number" name="" id="ccv_number" style="width: 25%;" placeholder="CCV Number">
+                    </form>
+                </div>
+                <button id="Submit_btn"><b>CONTINUE</b></button>
+                <div id="pay-pal">
+                    <div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+" alt="">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAxcHgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMDEgMzIiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHhtbG5zPSJodHRwOiYjeDJGOyYjeDJGO3d3dy53My5vcmcmI3gyRjsyMDAwJiN4MkY7c3ZnIj48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDEyLjIzNyAyLjggTCA0LjQzNyAyLjggQyAzLjkzNyAyLjggMy40MzcgMy4yIDMuMzM3IDMuNyBMIDAuMjM3IDIzLjcgQyAwLjEzNyAyNC4xIDAuNDM3IDI0LjQgMC44MzcgMjQuNCBMIDQuNTM3IDI0LjQgQyA1LjAzNyAyNC40IDUuNTM3IDI0IDUuNjM3IDIzLjUgTCA2LjQzNyAxOC4xIEMgNi41MzcgMTcuNiA2LjkzNyAxNy4yIDcuNTM3IDE3LjIgTCAxMC4wMzcgMTcuMiBDIDE1LjEzNyAxNy4yIDE4LjEzNyAxNC43IDE4LjkzNyA5LjggQyAxOS4yMzcgNy43IDE4LjkzNyA2IDE3LjkzNyA0LjggQyAxNi44MzcgMy41IDE0LjgzNyAyLjggMTIuMjM3IDIuOCBaIE0gMTMuMTM3IDEwLjEgQyAxMi43MzcgMTIuOSAxMC41MzcgMTIuOSA4LjUzNyAxMi45IEwgNy4zMzcgMTIuOSBMIDguMTM3IDcuNyBDIDguMTM3IDcuNCA4LjQzNyA3LjIgOC43MzcgNy4yIEwgOS4yMzcgNy4yIEMgMTAuNjM3IDcuMiAxMS45MzcgNy4yIDEyLjYzNyA4IEMgMTMuMTM3IDguNCAxMy4zMzcgOS4xIDEzLjEzNyAxMC4xIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBkPSJNIDM1LjQzNyAxMCBMIDMxLjczNyAxMCBDIDMxLjQzNyAxMCAzMS4xMzcgMTAuMiAzMS4xMzcgMTAuNSBMIDMwLjkzNyAxMS41IEwgMzAuNjM3IDExLjEgQyAyOS44MzcgOS45IDI4LjAzNyA5LjUgMjYuMjM3IDkuNSBDIDIyLjEzNyA5LjUgMTguNjM3IDEyLjYgMTcuOTM3IDE3IEMgMTcuNTM3IDE5LjIgMTguMDM3IDIxLjMgMTkuMzM3IDIyLjcgQyAyMC40MzcgMjQgMjIuMTM3IDI0LjYgMjQuMDM3IDI0LjYgQyAyNy4zMzcgMjQuNiAyOS4yMzcgMjIuNSAyOS4yMzcgMjIuNSBMIDI5LjAzNyAyMy41IEMgMjguOTM3IDIzLjkgMjkuMjM3IDI0LjMgMjkuNjM3IDI0LjMgTCAzMy4wMzcgMjQuMyBDIDMzLjUzNyAyNC4zIDM0LjAzNyAyMy45IDM0LjEzNyAyMy40IEwgMzYuMTM3IDEwLjYgQyAzNi4yMzcgMTAuNCAzNS44MzcgMTAgMzUuNDM3IDEwIFogTSAzMC4zMzcgMTcuMiBDIDI5LjkzNyAxOS4zIDI4LjMzNyAyMC44IDI2LjEzNyAyMC44IEMgMjUuMDM3IDIwLjggMjQuMjM3IDIwLjUgMjMuNjM3IDE5LjggQyAyMy4wMzcgMTkuMSAyMi44MzcgMTguMiAyMy4wMzcgMTcuMiBDIDIzLjMzNyAxNS4xIDI1LjEzNyAxMy42IDI3LjIzNyAxMy42IEMgMjguMzM3IDEzLjYgMjkuMTM3IDE0IDI5LjczNyAxNC42IEMgMzAuMjM3IDE1LjMgMzAuNDM3IDE2LjIgMzAuMzM3IDE3LjIgWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMDMwODciIGQ9Ik0gNTUuMzM3IDEwIEwgNTEuNjM3IDEwIEMgNTEuMjM3IDEwIDUwLjkzNyAxMC4yIDUwLjczNyAxMC41IEwgNDUuNTM3IDE4LjEgTCA0My4zMzcgMTAuOCBDIDQzLjIzNyAxMC4zIDQyLjczNyAxMCA0Mi4zMzcgMTAgTCAzOC42MzcgMTAgQyAzOC4yMzcgMTAgMzcuODM3IDEwLjQgMzguMDM3IDEwLjkgTCA0Mi4xMzcgMjMgTCAzOC4yMzcgMjguNCBDIDM3LjkzNyAyOC44IDM4LjIzNyAyOS40IDM4LjczNyAyOS40IEwgNDIuNDM3IDI5LjQgQyA0Mi44MzcgMjkuNCA0My4xMzcgMjkuMiA0My4zMzcgMjguOSBMIDU1LjgzNyAxMC45IEMgNTYuMTM3IDEwLjYgNTUuODM3IDEwIDU1LjMzNyAxMCBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny43MzcgMi44IEwgNTkuOTM3IDIuOCBDIDU5LjQzNyAyLjggNTguOTM3IDMuMiA1OC44MzcgMy43IEwgNTUuNzM3IDIzLjYgQyA1NS42MzcgMjQgNTUuOTM3IDI0LjMgNTYuMzM3IDI0LjMgTCA2MC4zMzcgMjQuMyBDIDYwLjczNyAyNC4zIDYxLjAzNyAyNCA2MS4wMzcgMjMuNyBMIDYxLjkzNyAxOCBDIDYyLjAzNyAxNy41IDYyLjQzNyAxNy4xIDYzLjAzNyAxNy4xIEwgNjUuNTM3IDE3LjEgQyA3MC42MzcgMTcuMSA3My42MzcgMTQuNiA3NC40MzcgOS43IEMgNzQuNzM3IDcuNiA3NC40MzcgNS45IDczLjQzNyA0LjcgQyA3Mi4yMzcgMy41IDcwLjMzNyAyLjggNjcuNzM3IDIuOCBaIE0gNjguNjM3IDEwLjEgQyA2OC4yMzcgMTIuOSA2Ni4wMzcgMTIuOSA2NC4wMzcgMTIuOSBMIDYyLjgzNyAxMi45IEwgNjMuNjM3IDcuNyBDIDYzLjYzNyA3LjQgNjMuOTM3IDcuMiA2NC4yMzcgNy4yIEwgNjQuNzM3IDcuMiBDIDY2LjEzNyA3LjIgNjcuNDM3IDcuMiA2OC4xMzcgOCBDIDY4LjYzNyA4LjQgNjguNzM3IDkuMSA2OC42MzcgMTAuMSBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC45MzcgMTAgTCA4Ny4yMzcgMTAgQyA4Ni45MzcgMTAgODYuNjM3IDEwLjIgODYuNjM3IDEwLjUgTCA4Ni40MzcgMTEuNSBMIDg2LjEzNyAxMS4xIEMgODUuMzM3IDkuOSA4My41MzcgOS41IDgxLjczNyA5LjUgQyA3Ny42MzcgOS41IDc0LjEzNyAxMi42IDczLjQzNyAxNyBDIDczLjAzNyAxOS4yIDczLjUzNyAyMS4zIDc0LjgzNyAyMi43IEMgNzUuOTM3IDI0IDc3LjYzNyAyNC42IDc5LjUzNyAyNC42IEMgODIuODM3IDI0LjYgODQuNzM3IDIyLjUgODQuNzM3IDIyLjUgTCA4NC41MzcgMjMuNSBDIDg0LjQzNyAyMy45IDg0LjczNyAyNC4zIDg1LjEzNyAyNC4zIEwgODguNTM3IDI0LjMgQyA4OS4wMzcgMjQuMyA4OS41MzcgMjMuOSA4OS42MzcgMjMuNCBMIDkxLjYzNyAxMC42IEMgOTEuNjM3IDEwLjQgOTEuMzM3IDEwIDkwLjkzNyAxMCBaIE0gODUuNzM3IDE3LjIgQyA4NS4zMzcgMTkuMyA4My43MzcgMjAuOCA4MS41MzcgMjAuOCBDIDgwLjQzNyAyMC44IDc5LjYzNyAyMC41IDc5LjAzNyAxOS44IEMgNzguNDM3IDE5LjEgNzguMjM3IDE4LjIgNzguNDM3IDE3LjIgQyA3OC43MzcgMTUuMSA4MC41MzcgMTMuNiA4Mi42MzcgMTMuNiBDIDgzLjczNyAxMy42IDg0LjUzNyAxNCA4NS4xMzcgMTQuNiBDIDg1LjczNyAxNS4zIDg1LjkzNyAxNi4yIDg1LjczNyAxNy4yIFoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA5Y2RlIiBkPSJNIDk1LjMzNyAzLjMgTCA5Mi4xMzcgMjMuNiBDIDkyLjAzNyAyNCA5Mi4zMzcgMjQuMyA5Mi43MzcgMjQuMyBMIDk1LjkzNyAyNC4zIEMgOTYuNDM3IDI0LjMgOTYuOTM3IDIzLjkgOTcuMDM3IDIzLjQgTCAxMDAuMjM3IDMuNSBDIDEwMC4zMzcgMy4xIDEwMC4wMzcgMi44IDk5LjYzNyAyLjggTCA5Ni4wMzcgMi44IEMgOTUuNjM3IDIuOCA5NS40MzcgMyA5NS4zMzcgMy4zIFoiPjwvcGF0aD48L3N2Zz4" alt="">
+                        <p>Pay in 4 interest-free payments of $21.25 Learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h2 style="margin-left: 20px; margin-top:10px ;">ORDER SUMMARY</h2>
+            <hr color="orange" style="width: 40%; margin-left: 25px;">
+            <br>
+            <div class="item-total">
+                <pre> Item(s) Subtotal           $17.98</pre>
+                <pre>Taxes                       $1.9</pre>
+            </div>
+            <br>
+            <form action="">
+                <input type="text" type="number" name="" id="promocode" placeholder="Enter Promot Code">
+                <button>Apply</button>
+            </form>
+            <br>
+            <h2 style="margin-left: 10px;">
+                <pre>Total -             $ 9.5</pre>
+            </h2>
+            <button id="purches-btn">
+                <h5>COMPLETE PURCHES</h5>
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("productConaierMain").addEventListener("click", () => {
+        window.location.href = "/day-3/checkOut.html";
+        console.log("ratna");
+    })
+</script>
+
+</html>

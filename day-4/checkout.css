@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+.nav nav {
+    display: flex;
+    gap: 1013px;
+    height: 72px;
+    border: 1px solid black;
+    width: 98%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav nav img {
+    width: 226px;
+    height: 72px;
+    margin-left: 57px;
+}
+
+.nav nav div {
+    display: flex;
+    gap: 20px;
+}
+
+.nav nav div img {
+    width: 20px;
+    margin-top: 22px;
+    height: 18px;
+}
+
+#cheOut {
+    margin-top: 19px;
+    margin-right: 35px;
+    font-size: 17px;
+}
+
+.mainSectoin {
+    display: flex;
+    width: 94%;
+    margin: auto;
+    gap: 10px;
+}
+
+.container1 {
+    width: 80%;
+    height: 610px;
+    /* border: 1px solid red; */
+    background-color: rgb(207, 201, 201);
+}
+
+.container2 {
+    width: 20%;
+    height: 610px;
+    /* border: 1px solid red; */
+}
+
+#backToMainPage {
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    background-color: rgb(248, 245, 245);
+    box-shadow: inset;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#quantityOfProduct {
+    margin-left: 10px;
+}
+
+#CustomarId {
+    margin-top: 10px;
+    height: 32px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    background-color: rgb(248, 245, 245);
+    box-shadow: inset;
+}
+
+#suceessImg {
+    margin-top: 5px;
+    height: 22px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#customarDeteals {
+    margin-top: 10px;
+    height: 42px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    background-color: rgb(248, 245, 245);
+    box-shadow: inset;
+}
+
+#customarDeteals H6 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#deliveryOption {
+    margin-top: 10px;
+    height: 42px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    background-color: rgb(248, 245, 245);
+    box-shadow: inset;
+}
+
+#deliveryOption h5 {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+#suggestration {
+    margin-top: 5px;
+    height: 26px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    background-color: rgb(248, 245, 245);
+}
+
+#suggestration h6 {
+    margin-left: 10px;
+}
+
+.prductContainer {
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+}
+
+#prductContainerChild1 {
+    height: 350px;
+    width: 50%;
+    /* border: 1px solid rgb(6, 117, 202); */
+}
+
+#prductContainerChildForAppend {
+    height: 180px;
+    width: 100%;
+    border: 1px solid rgb(6, 117, 202);
+}
+
+#prductContainerChild1 button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    /* border-color: black; */
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 1px;
+    margin-top: 117px;
+    cursor: pointer;
+}
+#prductContainerChild1 button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#prductContainerChild2 {
+    height: 350px;
+    width: 50%;
+    /* border: 1px solid rgb(6, 117, 202); */
+}
+
+#prductContainerChild2 div,
+#para {
+    height: 121px;
+    width: 100%;
+    /* border: 1px solid rgb(6, 117, 202); */
+    margin-top: 0px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+#para {
+    margin-left: 0px;
+    border-radius: 2px;
+}
+
+#para p {
+    margin-left: 2px;
+}
+
+#prductContainerChild2 div div {
+    display: flex;
+    flex-direction: column;
+}
+
+#prductContainerChild2 div div h5,
+p,
+h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#prductContainerChild2 div div h4 {
+    color: green;
+}
+
+#prductContainerChild2 div div img {
+    width: 119px;
+    height: 106px;
+    /* justify-content: left; */
+    margin-left: 189px;
+}
+
+#payment-rewards {
+    margin-top: 5px;
+    height: 44px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    background-color: rgb(248, 245, 245);
+}
+
+form {
+    display: flex;
+    margin-left: 10px;
+    gap: 2px;
+}
+
+form input,
+form button {
+    padding: 10px;
+}
+
+form button {
+    color: white;
+    background-color: rgb(10, 9, 9);
+    font-size: larger;
+    cursor: pointer;
+}
+
+#purches-btn {
+    width: 90%;
+    padding: 17px;
+    margin-left: 13px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

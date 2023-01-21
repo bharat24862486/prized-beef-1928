@@ -7,6 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/day-4/checkout.css">
+    <style>
+        @media only screen and (max-width: 600px) {
+            .mainSectoin {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+
+            #prductContainerChild2 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .popup{
+            width: 400px;
+            background-color: aqua;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 5px 30px 30px;
+            visibility: hidden;
+            transition: transform 0,4s top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .popup img{
+            width: 76px;
+          border-radius: 50%;
+        }
+        .popup button{
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px;
+            border-color: rgb(21, 198, 86);
+            border: 0;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -72,12 +123,14 @@
             </div>
             <div id="payment-rewards">
                 <h3>
-                    Payment & Rewards
+                    <a href="/day-4/payments.html" style="text-decoration: none; color: black;" 23> Payment &
+                        Rewards</a>
                 </h3>
             </div>
-            <div id="payment-rewards">
+            <div id="payment-rewards" id="billing-address">
                 <h3>
-                    Billing Address
+                    <a href="/day-4/billingAddress.html" style="text-decoration: none; color: black;"> Billing
+                        Address</a>
                 </h3>
             </div>
         </div>
@@ -86,53 +139,119 @@
             <hr color="orange" style="width: 40%; margin-left: 25px;">
             <br>
             <div class="item-total">
-                <pre> Item(s) Subtotal           $17.98</pre>
-                <pre>Taxes                       $1.9</pre>
+
             </div>
             <br>
-            <form action="" >
+            <form action="">
                 <input type="text" type="number" name="" id="promocode" placeholder="Enter Promot Code">
                 <button id="promoApplyBtn">Apply</button>
             </form>
             <br>
             <h2 style="margin-left: 10px;" id="totalPric">
-                <pre>Total -             $ 9.5</pre>
+
             </h2>
-            <button id="purches-btn"><h5>COMPLETE PURCHES</h5></button>
+            <button id="purches-btn">
+                <h5>COMPLETE PURCHES</h5>
+            </button>
         </div>
+    </div>
+    <div class="popup" id="popup">
+                    
+                   
+
     </div>
 </body>
 <script>
+    let popup = document.getElementById("popup");
+    let total_price = 1000;
+    // let total_price = data.reduce((acc, item) => {
+    //     acc += item.price;
+    // }, 0)
     let data = JSON.parse(localStorage.getItem("cart"));
-    
-    function apenddataContainer(data){
-        document.getElementById("prductContainerChildForAppend").innerHTML="";
+
+    function apenddataContainer(data) {
+        document.getElementById("prductContainerChildForAppend").innerHTML = "";
         data.forEach(element => {
-           let div = document.createElement("div");
-           
-           let img =document.createElement("img");
+            let div = document.createElement("div");
 
-           let title = document.createElement("p");
+            let img = document.createElement("img");
 
-           let quantiy = document.createElement("p");
+            let title = document.createElement("p");
 
-           let price = document.createElement("p");
+            let quantiy = document.createElement("p");
 
-           div.append(img,title,quantiy,price);
-           document.getElementById("prductContainerChildForAppend").append(div);
+            let price = document.createElement("p");
+
+            div.append(img, title, quantiy, price);
+            document.getElementById("prductContainerChildForAppend").append(div);
         });
     }
 
-    document.querySelector("#promoApplyBtn").addEventListener("click",(e)=>{
+    document.querySelector(".item-total").innerHTML = `<pre>Item(s) Subtotal          ${total_price} </pre>
+                                                       <pre>Taxes                        $1.9</pre>`
+
+
+    document.getElementById("totalPric").innerHTML = ` <pre>Total -             $ ${total_price + 1.9}</pre>`;
+
+
+
+
+    document.querySelector("#promoApplyBtn").addEventListener("click", (e) => {
         e.preventDefault()
         let value = document.querySelector("#promocode").value;
-        console.log(value);
+        //console.log(value);
+        document.getElementById("totalPric").innerHTML = "";
+        if (value === "JAN2023") {
+            let total_price_discoutn = total_price * (100 - 20) / 100;
+            document.getElementById("totalPric").innerHTML = ` <pre>Total -             $ ${total_price_discoutn}</pre>`;
+        } else {
+            alert("Wrong Promo Code")
+            document.getElementById("totalPric").innerHTML = ` <pre>Total -             $ ${total_price + 1.9}</pre>`;
+        }
     })
 
-    let total_price = data.reduce((acc,item)=>{
-        acc+=item.price;
-    },0)
+    let complete_purchage = document.querySelector("#purches-btn");
+    complete_purchage.addEventListener("click", () => {
+        // console.log("ratna");
+        popup.innerHTML=""
+        let LSData = JSON.parse(localStorage.getItem("status"));
+        let LSDatas = JSON.parse(localStorage.getItem("Status"));
+        console.log(LSDatas);
+        console.log(LSData);
+        let finalData = LSData.length - 1;
+        let finalDatas = LSDatas.length - 1;
+        if(finalData<LSDatas){
+           alert( "You Have To Payment First");
+           return;
+        }
+        if(finalData>LSDatas){
+           alert( "You Have To Give delivery Address First");
+           return;
+        }
+        if (LSData[finalData].paymentStaus === "ok" && LSDatas[finalDatas].billAddress === "ok") {
+            let idMess = document.createElement("h4");
+            idMess.innerText = "You item is succesfuly orderrd";
+            let idMessage = document.createElement("h4");
+            idMessage.innerText = `Your Item Would Be Delivered To ${LSDatas[finalDatas].name} As Soon As Possible`;
+            let closeBtn = document.createElement("button");
+            closeBtn.innerText = "OK";
+            let popupImg = document.createElement("img");
+            popupImg.setAttribute("src", "/day-2/404-tick.png");
+
+            closeBtn.addEventListener("click", () => {
+                popup.classList.remove("open-popup")
+            })
+            popup.append(popupImg, idMess, idMessage, closeBtn);
+            popup.classList.add("open-popup")
+        }
+        else {
+            alert("UFF")
+        }
+    })
+
+
 
 
 </script>
+
 </html>

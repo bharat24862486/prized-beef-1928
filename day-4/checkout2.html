@@ -111,6 +111,7 @@
             height: 53px;
             border: 1px solid black;
             display: flex;
+            margin-top: 31px;
         }
         #pay-pal div{
             display: flex;
@@ -118,6 +119,7 @@
         #pay-pal div p{
             margin-left: 22px;
         }
+        
     </style>
 </head>
 
@@ -242,6 +244,23 @@
     document.getElementById("productConaierMain").addEventListener("click", () => {
         window.location.href = "/day-3/checkOut.html";
         console.log("ratna");
+    });
+
+    document.getElementById("Submit_btn").addEventListener("click",()=>{
+        let cardNumber = document.getElementById("cardNumber").value;
+        let expData = document.getElementById("expData").value;
+        let ccv_number = document.getElementById("ccv_number").value;
+
+        console.log(cardNumber,expData,ccv_number);
+
+        if(cardNumber.length!=16){
+            alert("Enter A Valid Card Number");
+            return;
+        }
+        if(ccv_number.length!=3){
+            alert("Wrong CCV")
+            return;
+        }
     })
 </script>
 

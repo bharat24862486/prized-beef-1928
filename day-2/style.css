@@ -19,13 +19,13 @@ body {
 }
 
 .containerLeft {
-    height: 200vh;
+    height: 1248px;;
     width: 40%;
     border: 1px solid red;
 }
 
 .containerRight {
-    height: 200vh;
+    height: 1248px;;
     width: 60%;
     border: 1px solid red;
     background-image: url(image.jpg);
@@ -163,4 +163,18 @@ form i {
             font-size: 18px;
             border-radius: 4px;
             cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px){
+            .mainDiv{
+                display: flex;
+                flex-direction: column;
+            }
+            .containerLeft , .containerRight{
+                margin-left:  126px;;
+            }
+        }
+       
+        a{
+            text-decoration: none;
         }

@@ -13,7 +13,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/B71749/image/2/',
             title:'Continental Upper Radiator Hose B71749',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(3)',
@@ -24,7 +24,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0406R/image/2/',
             title:'Rein Upper Radiator Hose CHR0406R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(13)',
@@ -35,7 +35,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E71989/image/2/',
             title:'Continental Upper Radiator Hose E71989',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.9',
             people:'(32)',
@@ -46,7 +46,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72628/image/2/',
             title:'Continental Upper Radiator Hose E72628',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(5)',
@@ -57,7 +57,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Radiator Hose E72714',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7 ',
             people:'(3)',
@@ -68,7 +68,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Upper Radiator Hose E72484',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(5)',
@@ -84,7 +84,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0406R/image/2/',
             title:'Rein Upper Radiator Hose CHR0406R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(13)',
@@ -95,7 +95,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E71989/image/2/',
             title:'Continental Upper Radiator Hose E71989',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.9',
             people:'(32)',
@@ -106,7 +106,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72628/image/2/',
             title:'Continental Upper Radiator Hose E72628',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(5)',
@@ -117,7 +117,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Radiator Hose E72714',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7 ',
             people:'(3)',
@@ -128,7 +128,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Upper Radiator Hose E72484',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(5)',
@@ -139,7 +139,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.1',
             people:'(9)',
@@ -156,7 +156,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E71989/image/2/',
             title:'Continental Upper Radiator Hose E71989',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.9',
             people:'(32)',
@@ -167,7 +167,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72628/image/2/',
             title:'Continental Upper Radiator Hose E72628',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(5)',
@@ -178,7 +178,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Radiator Hose E72714',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7 ',
             people:'(3)',
@@ -189,7 +189,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Upper Radiator Hose E72484',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(5)',
@@ -200,7 +200,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.1',
             people:'(9)',
@@ -211,7 +211,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72633/image/2/',
             title:'Continental Upper Radiator Hose E72633',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(13)',
@@ -230,7 +230,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72628/image/2/',
             title:'Continental Upper Radiator Hose E72628',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(5)',
@@ -241,7 +241,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Radiator Hose E72714',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7 ',
             people:'(3)',
@@ -252,7 +252,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Upper Radiator Hose E72484',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(5)',
@@ -263,7 +263,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.1',
             people:'(9)',
@@ -274,7 +274,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72633/image/2/',
             title:'Continental Upper Radiator Hose E72633',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(13)',
@@ -285,7 +285,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72227/image/2/',
             title:'Continental Upper Radiator Hose D72227',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(32)',
@@ -305,7 +305,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Radiator Hose E72714',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7 ',
             people:'(3)',
@@ -316,7 +316,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
             title:'Continental Upper Radiator Hose E72484',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(5)',
@@ -327,7 +327,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.1',
             people:'(9)',
@@ -338,7 +338,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72633/image/2/',
             title:'Continental Upper Radiator Hose E72633',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
             people:'(13)',
@@ -349,7 +349,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72227/image/2/',
             title:'Continental Upper Radiator Hose D72227',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.4',
             people:'(32)',
@@ -360,7 +360,7 @@ let itemData = [
         {
             img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/drm/626-541/image/2/',
             title:'Dorman Hose 626-541',
-            starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
+            starImg:['/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png','/day-2/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.2',
             people:'(11)',

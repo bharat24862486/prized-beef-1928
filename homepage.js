@@ -3,6 +3,9 @@ let one=document.getElementById("onebtn")
 let two = document.getElementById("twobtn")
 let three = document.getElementById('threebtn')
 let left = document.getElementById('left')
+let text=document.getElementById('text')
+
+
 
 one.addEventListener('change',()=>{
     let URL = "https://www.autozone.com/cdn/images/B2C/US/media/FY23/P0506/Heroes/_fy23p0506-superhero-battery-d.jpg"
@@ -20,8 +23,39 @@ three.addEventListener('change',()=>{
 
 
 
+// *********************************************************************
 
+let check=JSON.parse(localStorage.getItem("LOGIN"))||[]
+let log=document.getElementById("log")
+check.forEach((ele,ind)=>{
 
+    if(ele.logincheck==true){
+        // log.style.display="none"
+        text.innerText="Log Out"
+    }
+})
+
+text.addEventListener("click",()=>{
+    if(text.innerText=="Sign Up"){
+        check.forEach((ele,ind)=>{
+            ele.logincheck=false;
+        })
+        localStorage.setItem("LOGIN",JSON.stringify(check))
+
+        window.location.href="/day-2/signUp.html"
+
+    }
+    else if(text.innerText=="Log Out"){
+        check.forEach((ele,ind)=>{
+            ele.logincheck=false;
+        })
+        localStorage.setItem("LOGIN",JSON.stringify(check))
+
+        window.location.href="/day-3/Login.html"
+
+    }
+
+})
 
 
 

@@ -1,13 +1,21 @@
 let userData = JSON.parse(localStorage.getItem("userRegisterData")) || [];
 let popup = document.getElementById("popup");
 
+
+let hy=JSON.parse(localStorage.getItem("LOGIN"))||[]
+
+
+
+
+
 document.getElementById("SubmitBtn").addEventListener("click", () => {
     popup.innerHTML=null;
     let userDataEmailOrId = document.getElementById("emailId").value;
     let usetpass = document.getElementById("password").value;
 
+
     for (let i = 0; i < userData.length; i++) {
-        if (userData[i].emailId === userDataEmailOrId && userData[i].id == userDataEmailOrId || userData[i].password === usetpass) {
+        if (userData[i].emailId == userDataEmailOrId && userData[i].password == usetpass) {
             //alert("ok");
             let idMess = document.createElement("h4");
             idMess.innerText = "Successfully Loged In"
@@ -17,7 +25,21 @@ document.getElementById("SubmitBtn").addEventListener("click", () => {
             popupImg.setAttribute("src", "/day-2/404-tick.png");
 
             closeBtn.addEventListener("click", () => {
+
+              let obj={
+                logincheck:true
+            
+              }
+              hy.push(obj)
+              localStorage.setItem("LOGIN",JSON.stringify(hy))
+
+                window.location.href="/homepage.html"
+
+               
+
                 popup.classList.remove("open-popup")
+
+                
             })
             popup.append(popupImg, idMess, closeBtn);
             popup.classList.add("open-popup");

@@ -1,7 +1,7 @@
 body {
     /* background-color: bisque; */
 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -19,16 +19,16 @@ body {
 
 #manu {
     width: 30px;
-   
+
     margin-left: 30px;
-   
+
     cursor: pointer;
     position: absolute;
-    
+
     box-sizing: border-box;
 
     margin-top: 10px;
-   
+
 
 
 
@@ -111,7 +111,7 @@ body {
     padding-left: 0%;
     line-height: 20px;
     /* padding-left: 10px; */
-    background: linear-gradient(to bottom, #99ccff 0%, #ccffff 100%);
+    background-color: white;
 }
 
 
@@ -192,7 +192,7 @@ img {
     /* border: 2px solid rgb(140, 140, 178); */
     /* height: 80px; */
     background: linear-gradient(to bottom, #6699ff 0%, #ccccff 93%);
-    background-color:rgb(232, 115, 73);
+    background-color: rgb(232, 115, 73);
     position: sticky;
     top: 0px;
 
@@ -260,7 +260,7 @@ a {
     /* align-items: center; */
     margin-top: 15px;
     /* padding: 20px; */
-    width:580px;
+    width: 580px;
     height: 30px;
     border-radius: 4px;
     border: none;
@@ -272,29 +272,29 @@ a {
 
 
 
-#btn{
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:6px;
-    padding-bottom:6px;
+#btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     position: relative;
-    left:-90px;
+    left: -90px;
     border: none;
     background-color: white;
     /* border:1px solid #a5b2b1; */
     cursor: pointer;
-    
+
 }
 
 #stor {
     /* border: 2px solid purple; */
     width: 170px;
     margin-left: 60px;
-    
+
     font-size: 18px;
-   
+
     text-align: center;
-    padding-top:2px;
+    padding-top: 2px;
     padding-bottom: 2px;
     box-sizing: border-box;
 
@@ -303,7 +303,7 @@ a {
 
 #stor:hover {
     background-color: rgba(185, 215, 234, 0.848)
-    /* padding-top:1px;
+        /* padding-top:1px;
     padding-bottom:1px;
 } */
 }
@@ -750,6 +750,7 @@ top:0;
 #tranding span {
     border-bottom: 5px solid orange;
     border-radius: 6px;
+    color: #1f1f1f;
 }
 
 
@@ -989,9 +990,11 @@ hr {
     justify-content: space-between;
     /* align-items: center; */
 }
-.Between_One_And_Two_Grid>div:hover{
-    border:1px solid #1d1b1b;
+
+.Between_One_And_Two_Grid>div:hover {
+    border: 1px solid #1d1b1b;
 }
+
 .Between_One_And_Two_Cont1 {
     display: flex;
     align-items: center;
@@ -1056,9 +1059,9 @@ hr {
         position: sticky;
         top: 0%;
         /* height: 150px; */
-       
+
     }
-   
+
     .change {
 
         text-decoration: none;
@@ -1077,31 +1080,31 @@ hr {
         flex-direction: column;
 
         justify-content: center;
-     background-color:wheat;
+        background-color: wheat;
 
 
         line-height: 20px;
         /* padding-left: 10px; */
-       
+
     }
 
 
     #firstt {
         flex-direction: column;
         width: 100%;
-        height:240px;
+        height: 240px;
 
-       
-      
+
+
         /* font-size: 15px; */
-       
+
 
     }
-   
+
 
     #img {
-        height:35%;
-        width:20%;
+        height: 35%;
+        width: 20%;
     }
 
     #forsign {
@@ -1132,12 +1135,12 @@ hr {
     }
 
     #check #main {
-        width:50%;
+        width: 50%;
         /* border:2px solid #6699ff; */
         /* margin: auto; */
         /* margin-left: 150px; */
         margin: auto;
-        margin-top:370px;
+        margin-top: 370px;
 
     }
 
@@ -1180,72 +1183,79 @@ hr {
 
 
 
- #feature {
-    /* border: 2px solid blue; */
-    padding-inline: 20px;
- }
- #popular{
-    padding-inline:20px ;
-    width: 100%;
-    /* border: 2px solid blue; */
-    grid-template-columns: repeat(2,1fr);
+    #feature {
+        /* border: 2px solid blue; */
+        padding-inline: 20px;
+    }
 
- }
- #emaizone{
-    width: 100%;
-    /* border: 2px solid black; */
-    flex-direction:column;
- }
- #footer{
-    /* border: 2px solid greenyellow; */
-    width: 100%;
-   
- }
- #first{
-    /* border: 2px solid blue; */
-    flex-direction: column;
-   
- }
- #social{
-    width: 70%;
- }
- #gridpart{
-    width: 100%;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 20px;
-    margin-bottom:60px;
-    
- }
+    #popular {
+        padding-inline: 20px;
+        width: 100%;
+        /* border: 2px solid blue; */
+        grid-template-columns: repeat(2, 1fr);
 
-#zo {
-   
-    /* border: 2px solid brown; */
-    flex-direction: column;
-    line-height: 5px;
-    
-   
- }
+    }
+
+    #emaizone {
+        width: 100%;
+        /* border: 2px solid black; */
+        flex-direction: column;
+    }
+
+    #footer {
+        /* border: 2px solid greenyellow; */
+        width: 100%;
+
+    }
+
+    #first {
+        /* border: 2px solid blue; */
+        flex-direction: column;
+
+    }
+
+    #social {
+        width: 70%;
+    }
+
+    #gridpart {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+        margin-bottom: 60px;
+
+    }
+
+    #zo {
+
+        /* border: 2px solid brown; */
+        flex-direction: column;
+        line-height: 5px;
 
 
-#featured_img {
-    /* border: 2px solid blue; */
-    width: 100%;
-    
-    grid-template-columns: repeat(2, 1fr);
-}
-#last{
-    flex-direction: column;
-}
-  
-#apple{
-flex-direction: column;
-    width:30%;
-}
+    }
 
-#Main_Insert{
-    /* border: 2px solid greenyellow; */
-    grid-template-columns:repeat(3,1fr);
-}
+
+    #featured_img {
+        /* border: 2px solid blue; */
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #last {
+        flex-direction: column;
+    }
+
+    #apple {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    #Main_Insert {
+        /* border: 2px solid greenyellow; */
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* ******************************** */
@@ -1258,13 +1268,13 @@ flex-direction: column;
         flex-direction: column;
         position: sticky;
         top: 0px;
-        height:150px
+        height: 150px
     }
 
     #firstt {
         flex-direction: column;
         width: 100%;
-        height:240px;
+        height: 240px;
 
 
         font-size: 15px;
@@ -1272,8 +1282,8 @@ flex-direction: column;
     }
 
     #img {
-        height:35%;
-        width:20%;
+        height: 35%;
+        width: 20%;
         /* border: 2px solid blue; */
     }
 
@@ -1295,7 +1305,8 @@ flex-direction: column;
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
     }
-    #social{
+
+    #social {
         width: 70%;
-     }
+    }
 }

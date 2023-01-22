@@ -641,26 +641,28 @@ let PriceShow2 = document.getElementById('firstPrice2')
 PriceShow.innerText = 0
 PriceShow2.innerText = 0
 
+let cont = document.getElementById('Three_Id_Cont1')
+
 
 addItemsCart(CART)
 
 
-let cont = document.getElementById('Three_Id_Cont1')
+
 
 function addItemsCart(arr) {
     addItemCartSection.innerHTML = ''
     let total = 0
     if (arr.length == 0) {
-        let AppendDiv = document.createElement('div')
-        AppendDiv.setAttribute('class','Three_Cont1_One')
-        AppendDiv.innerHTML = `
+        // cont.innerHTML = ''
+        
+        Do_Empty_Container.innerHTML = `
         <img src="https://www.autozone.com/images/cart_empty_icon.svg" alt="" class="Cart_Icon_Img">
         <p class="Empty_Cart_Text1">LOOKS LIKE YOUR CART IS EMPTY</p>
         <p class="Empty_Cart_Text2">Search for Products Above</p>
         <button id="Empty_Cart_Button">RETURN TO HOME</button>
         `
 
-        cont.append(AppendDiv)
+        
 
 
 

@@ -583,5 +583,6 @@ addCart.addEventListener('click',()=>{
     }
     fetchCart.push(obj)
     localStorage.setItem('cart', JSON.stringify(fetchCart))
+    alert('Item added to the cart')
     
 })

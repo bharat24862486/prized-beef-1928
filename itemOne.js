@@ -3,12 +3,12 @@ let secondImage = document.getElementById('Second_Main_Image')
 let PerformOnImage = document.getElementById('Image_Chnage')
 
 firstImage.addEventListener('click',()=>{
-    PerformOnImage.src = 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/10/'
+    PerformOnImage.src = 'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/10/'
     firstImage.style.border = '1px solid red'
     secondImage.style.border = 'none'
 })
 secondImage.addEventListener('click',()=>{
-    PerformOnImage.src = 'https://contentinfo.autozone.com/znetcs/additional-prod-images/en/US/dyc/D72592/2/image/10/'
+    PerformOnImage.src = 'https://www.autozone.com/cdn/images/B2C/US/media/content/Charts/Batteries/dlchart-battery-duralast-agm-2-d.jpg'
     firstImage.style.border = 'none'
     secondImage.style.border = '1px solid red'
 })
@@ -576,7 +576,7 @@ let addCart = document.getElementById('ADD_TO_CART')
 
 addCart.addEventListener('click',()=>{
     let obj = {
-        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/1/',
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/1/',
         title: productName.innerText,
         dollar: totalDollar
 

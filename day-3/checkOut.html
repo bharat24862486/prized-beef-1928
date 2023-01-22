@@ -25,29 +25,33 @@
                 flex-direction: column;
             }
         }
-        .popup{
+
+        .popup {
             width: 400px;
             background-color: aqua;
             border-radius: 6px;
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translate(-50%,-50%) scale(0.1);
+            transform: translate(-50%, -50%) scale(0.1);
             text-align: center;
             padding: 5px 30px 30px;
             visibility: hidden;
-            transition: transform 0,4s top 0.4s;
+            transition: transform 0, 4s top 0.4s;
         }
-        .open-popup{
+
+        .open-popup {
             visibility: visible;
             top: 50%;
-            transform: translate(-50%,-50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
         }
-        .popup img{
+
+        .popup img {
             width: 76px;
-          border-radius: 50%;
+            border-radius: 50%;
         }
-        .popup button{
+
+        .popup button {
             width: 100%;
             margin-top: 50px;
             padding: 10px;
@@ -57,14 +61,21 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        #prductContainerChildForAppend div img {
+            margin-left: 163px;
+            width: 100px;
+        }
+        #prductContainerChildForAppend div h4{
+            margin-left: 163px;
+        }
     </style>
 </head>
 
 <body>
     <div class="nav">
         <nav>
-            <img src="/day-2/0001 (1).png"
-                alt="">
+            <img src="/day-2/0001 (1).png" alt="">
             <div>
                 <img src="/day-3/icons8-lock-24.png" alt="">
                 <h5 id="cheOut">CHECKOUT</h5>
@@ -156,37 +167,43 @@
         </div>
     </div>
     <div class="popup" id="popup">
-                    
-                   
+
+
 
     </div>
 </body>
 <script>
     let popup = document.getElementById("popup");
-    let total_price = 1000;
+    // let total_price = 1000;
     // let total_price = data.reduce((acc, item) => {
     //     acc += item.price;
     // }, 0)
-    let data = JSON.parse(localStorage.getItem("cart"));
+    let data = JSON.parse(localStorage.getItem("totalPrice"));
+    let length = data.length;
 
+    console.log(data);
+    let total_price = data[length - 1].totalPrice;
+    console.log(total_price);
     function apenddataContainer(data) {
         document.getElementById("prductContainerChildForAppend").innerHTML = "";
         data.forEach(element => {
             let div = document.createElement("div");
 
+
             let img = document.createElement("img");
+            img.setAttribute("src", "https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/1/")
+            let total_price = document.createElement("h4");
+            total_price.innerText = "Total Bill $" + element.totalPrice;
+            // total_price.innerText="sourav";
+            let name = document.createElement("h4");
+            name.innerText = "Battery";
 
-            let title = document.createElement("p");
+            div.append(img, name, total_price);
 
-            let quantiy = document.createElement("p");
-
-            let price = document.createElement("p");
-
-            div.append(img, title, quantiy, price);
             document.getElementById("prductContainerChildForAppend").append(div);
         });
     }
-
+    apenddataContainer(data);
     document.querySelector(".item-total").innerHTML = `<pre>Item(s) Subtotal          ${total_price} </pre>
                                                        <pre>Taxes                        $1.9</pre>`
 
@@ -202,8 +219,8 @@
         //console.log(value);
         document.getElementById("totalPric").innerHTML = "";
         if (value === "JAN2023") {
-            let total_price_discoutn = total_price * (100 - 20) / 100;
-            document.getElementById("totalPric").innerHTML = ` <pre>Total -             $ ${total_price_discoutn}</pre>`;
+            let total_price_discoutn = (total_price * (100 - 20) / 100).toFixed(2) ;
+            document.getElementById("totalPric").innerHTML = `<h5> <pre>Applying Promo -         $ ${total_price_discoutn}</pre></h5>`;
         } else {
             alert("Wrong Promo Code")
             document.getElementById("totalPric").innerHTML = ` <pre>Total -             $ ${total_price + 1.9}</pre>`;
@@ -213,20 +230,20 @@
     let complete_purchage = document.querySelector("#purches-btn");
     complete_purchage.addEventListener("click", () => {
         // console.log("ratna");
-        popup.innerHTML=""
+        popup.innerHTML = ""
         let LSData = JSON.parse(localStorage.getItem("status"));
         let LSDatas = JSON.parse(localStorage.getItem("Status"));
         console.log(LSDatas);
         console.log(LSData);
         let finalData = LSData.length - 1;
         let finalDatas = LSDatas.length - 1;
-        if(finalData<LSDatas){
-           alert( "You Have To Payment First");
-           return;
+        if (finalData < LSDatas) {
+            alert("You Have To Payment First");
+            return;
         }
-        if(finalData>LSDatas){
-           alert( "You Have To Give delivery Address First");
-           return;
+        if (finalData > LSDatas) {
+            alert("You Have To Give delivery Address First");
+            return;
         }
         if (LSData[finalData].paymentStaus === "ok" && LSDatas[finalDatas].billAddress === "ok") {
             let idMess = document.createElement("h4");

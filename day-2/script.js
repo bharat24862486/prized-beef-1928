@@ -22,11 +22,13 @@ function showHide() {
 }
 
 let popup = document.getElementById("popup");
+
 let userData = JSON.parse(localStorage.getItem("userRegisterData")) || [];
 document.querySelector("#SubmitBtn").addEventListener("click",(e)=>{
 popup.innerHTML=null;
 e.preventDefault();
 console.log("ratna");
+
 let firstName = document.getElementById("firstName").value;
 let lastName = document.getElementById("lastName").value;
 let zipCode = document.getElementById("zip-code").value;
@@ -55,10 +57,12 @@ for(let i =0;i<userData.length;i++){
         alert("Email Id Is Already Register");
         return; 
     }
+    
 }
 let id = generateID();
 obj.id = id;
 userData.push(obj);
+
 localStorage.setItem("userRegisterData",JSON.stringify(userData));
 let idMess = document.createElement("h4");
 idMess.innerText="Successfully Created A New Account"

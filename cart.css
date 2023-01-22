@@ -638,27 +638,6 @@ i {
     color: #1c1212d1;
 }
 
-#nav {
-    width: 100%;
-    /* border: 2px solid rgb(140, 140, 178); */
-    /* height: 80px; */
-    background: linear-gradient(to bottom, #6699ff 0%, #ccccff 93%);
-    background-color: rgb(232, 115, 73);
-    position:sticky;
-    top: 0px;
-
-    display: flex;
-    /* margin: auto; */
-    /* justify-content:center; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-
-}
 
 #log i {
     padding-left: 20px;
@@ -675,8 +654,8 @@ i {
     background: linear-gradient(to bottom, #6699ff 0%, #ccccff 93%);
     
     background-color: rgb(232, 115, 73);
-    position:sticky;
-    top: 0px;
+    /* position:sticky; */
+    /* top: 0px; */
 
     display: flex;
     /* margin: auto; */

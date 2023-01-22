@@ -195,7 +195,7 @@ let itemData = [
         
    
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREB0aZAeUyPfqYz9Ox1KHL64F2s9zx5kIXNQ&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/H11XV-2/image/2/',
             title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -206,7 +206,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ6La79iPyj93PPuevA0EERJKcap9cXIIYqA&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H6-AGM/image/2/',
             title:'Continental Upper Radiator Hose E72628',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -228,7 +228,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDheT9gDcC9XL0LzIrvA1HwXrfMPa8nOrg6g&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
             title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -258,6 +258,7 @@ let itemData = [
             people:'(106)',
             dollarSign:'$',
             dollar:'1',
+
             dollarCents:'49'
         }
     ],
@@ -269,7 +270,7 @@ let itemData = [
         
         
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjY25OrnpGtX9WNsvssnFwqk84pQtKPRFMw&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/35-DLG/image/2/',
             title:'Continental Upper Radiator Hose E72628',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -280,18 +281,18 @@ let itemData = [
             dollarCents:'99'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9m0ioVKFgyop2CyiyZVvYYJYByz5OTQeG6w&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/pre/PWIFVDB/image/2/',
             title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7',
             people:'(106)',
             dollarSign:'$',
-            dollar:'1',
+            dollar:'10',
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnARx79YoK-YnC8uw9eP6mGcshOvKRFMwzw&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W205Q/image/2/',
             title:'Continental Upper Radiator Hose E72484',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -302,7 +303,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/flo/10713BLK132/image/2/',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S6607XL/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -313,8 +314,7 @@ let itemData = [
             dollarCents:'99'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-4zpvqpRIbJuYayzATK-cwB2oTDmxLDz_AqYKd8MH-IrNpr22dt8YljESWkOh8mKTuA&usqp=CAU',
-            title:'Continental Upper Radiator Hose E72633',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/9005XV-2/image/2/',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'5.0',
@@ -324,7 +324,7 @@ let itemData = [
             dollarCents:'99'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn491TaMG4JrSyrHzMIAA9EBl4S2nBC4N0rQ&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPSYN0W205Q/image/2/',
             title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -343,8 +343,8 @@ let itemData = [
         
         
         
-        {  img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/B71749/image/2/',
-            title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        {  img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/pre/PWIFVDB/image/2/',
+        title:'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
             rating:'4.7',
@@ -354,7 +354,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG30TisPlyRHqNmtA3gkE5RHbJiSW2axRciA&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
             title:'Continental Upper Radiator Hose E72484',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -365,7 +365,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWP_KYrg5Jn30S4Z2xtFsNDYQ-n-mCmeXYOQ&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H6-AGM/image/2/',
             title:'Rein Upper Radiator Hose CHR0405R',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -376,7 +376,7 @@ let itemData = [
             dollarCents:'99'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBPq-usZcpoZUu7XZolWQDvmtXeZEQDa0Nw&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S7317XL/image/2/',
             title:'Continental Upper Radiator Hose E72633',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -387,7 +387,7 @@ let itemData = [
             dollarCents:'99'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAf8ea8R3GFeJd1IXqTR3m8sDB1OAEBBlrDw&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
             title:'Continental Upper Radiator Hose D72227',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -398,7 +398,7 @@ let itemData = [
             dollarCents:'49'
         },
         {
-            img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBVe-JoTJR_HHP6Jn5ehv2k9AZ4_UhHUVeQ&usqp=CAU',
+            img:'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W305Q/image/2/',
             title:'Dorman Hose 626-541',
             starImg:['images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png','images/icons8-star-50.png'],
             space:'&nbsp;&nbsp;',
@@ -457,7 +457,7 @@ function ForBackword(arr){
         // let spaces = e.space
         // div4.append(spaces)
         // div4.append('&nbsp;&nbsp;')
-
+ 
         let span1 = document.createElement('span')
         span1.setAttribute('class','Span_Inside_Between_One_And_Two_Cont1')
         span1.innerText = e.rating
@@ -500,16 +500,6 @@ function ForBackword(arr){
     })
 
 }
-
-
-
-
-
-
-
-
-
-
 
 function ForForward(){
     mainAppend.innerHTML = ''
@@ -587,4 +577,18 @@ function ForForward(){
     })
 
 }
+let search=document.getElementById("search")
+
+
+
+let btn = document.getElementById("btn")
+btn.addEventListener("click",() => {
+    if(search.value=="Battery"|| search.value=="battery") {
+      
+      window.location.href="/search1.html"
+        
+    }
+   
+})
+
 

@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    width: 100%;
+    overflow-x: hidden;
 }
 #rec-1{
     display: flex;
@@ -12,15 +14,15 @@ body{
     align-items: center;
     background-color: rgb(226, 223, 223);
     padding: 20px;
-    width: 70%;
-    margin-left: 30%;
+    width: 100%;
+    /* margin-left: 30%; */
     
 }
 #orange-line{
-    width: 70%;
+    width: 100%;
     height: 2px;
     background-color: rgb(255, 123, 0);
-    margin-left: 30%;
+    /* margin-left: 30%; */
 }
 #li-2 select,
 #li-3 select,
@@ -34,7 +36,7 @@ body{
     width: 100%;
     
     gap: 100px;
-    margin-left: 30%;
+    /* margin-left: 30%; */
     padding-bottom: 10px;
 }
 /* #rec-2 {
@@ -51,8 +53,8 @@ body{
 }
 #batr{
     display: flex;
-    width: 70%;
-    margin-left: 30%;  
+    width: 100%;
+    /* margin-left: 30%;   */
     border: 0.5px solid #a5a3a3;
     padding: 50px;
 ;
@@ -61,8 +63,8 @@ body{
 }
 #first{
     display: flex;
-    /* border: 0.5px solid #000000; */
-       width: 70%;
+    /* border: 10px solid #000000; */
+       /* width: 70%; */
        height: 50%;
        text-align: right;
        gap: 40px
@@ -73,7 +75,7 @@ body{
        /* margin-left: 100px; */
 }
 #second{
-    width: 30%;
+    /* width: 30%; */
     /* border: 2px solid green ; */
 }
 #free{
@@ -92,9 +94,12 @@ body{
     width: 100%;
     padding: 8px 10px;
 }
+.img_for_One_One2{
+width: 100%;
+}
 .desc{
     width: 90%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     margin-right: 10%;
     padding-top: 50px;
     display: grid;
@@ -143,11 +148,11 @@ nav{
 
 .One{
     display: flex;
-    margin-left: 30%;
-    border: 0.5px solid;
-    border-color: grey;
-    padding-top: 40px;
-    padding-left: 40px;
+    margin-left: 1%; 
+    /* border: 0.5px solid;
+    border-color: gray; */
+    padding-top: 40px; 
+     padding-left: 40px; 
 }
 
 .One_One{
@@ -178,7 +183,7 @@ nav{
 .One_Two{
     /* border: 1px solid black; */
     width: 35%;
-    margin-left: 40px;
+    margin-left: 300px; 
 }
 .One_Two_One{
     margin-top: 20px;
@@ -230,7 +235,7 @@ h2{
 .One_cont2{
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     /* justify-content: space-between; */
 }
@@ -292,6 +297,10 @@ h2{
     height: 30px;
     border: none;
     /* border: 0.1px solid black; */
+    text-align: center;
+}
+.Between_One_And_Two {
+    /* border: 3px solid red; */
     text-align: center;
 }
 .One_Two > p{
@@ -386,17 +395,32 @@ h2{
     text-align: center;
 }
 .a_With_Black{
-    color: black;
+    color: black; 
+}
+#recom{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#hr{
+  border: 4px solid red;  
+  width: 70px;
+  margin-left: 30px;
+  margin-bottom: 50px;
 }
 .desc{
     width: 90%;
     margin: auto;
+    margin-left: 150px;
     display: grid;
     grid-template-columns: 30% 65%;
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: justify;
     /* color: #E0E0E0; */
+}
+#Between_One_And_Two{
+    width: 90%;
+    margin: auto;
 }
 .pagination{
     display: block;
@@ -404,4 +428,207 @@ h2{
     justify-content: center;
     text-align: center;
     padding: 50px;
+}
+/* End part */
+.little_dollar2{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-weight: ; */
+     /* margin-bottom: 550px; */
+    /* border: 1px solid brown; */
+    margin-top: 10px;
+}
+.big_dollar2{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    
+    /* border: 1px solid black; */
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+
+.Between_One_And_Two{
+    display: flex;
+    align-items: center;
+}
+.Between_One_And_Two_Grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 240px;
+    gap: 10px 20px;
+    /* align-items: center; */
+}
+.Between_One_And_Two_Grid > div{
+    /* border: 1px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* text-align: center; */
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.Between_One_And_Two_Cont1{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-evenly; */
+    
+}
+
+.Between_One_And_Two_Cont1 img{
+    width: 8%;
+}
+.Between_One_And_Two_Img1{
+    width: 50%;
+    /* border: 1px solid black; */
+     display: block; 
+    margin: auto;
+}
+.Between_One_And_Two_Cont2{
+    display: flex;
+    align-items: center;
+    /* float: right; */
+    
+    /* bottom: 0px; */
+    /* justify-content: center; */
+}
+.Span_Inside_Between_One_And_Two_Cont1{
+    margin-left: 10px;
+}
+/* .Between_One_And_Two_Cont2 span{
+    position:
+    bottom: 0;
+    left: 0;
+} */
+/* End Part-2 */
+.little_dollar2{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    /* margin-bottom: 50px; */
+    /* border: 1px solid brown; */
+    margin-top: 10px;
+}
+.big_dollar2{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    
+    /* border: 1px solid black; */
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+
+.Between_One_And_Two{
+    display: flex;
+    align-items: center;
+}
+.Between_One_And_Two_Grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 240px;
+    gap: 10px 20px;
+    margin-left: 5%;
+    /* align-items: center; */
+}
+.Between_One_And_Two_Grid > div{
+    /* border: 1px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* text-align: center; */
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.Between_One_And_Two_Grid > div:hover{
+    scale: 1.1;
+}
+#backword{
+    margin-left: 3%;
+}
+.Between_One_And_Two_Cont1{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-evenly; */
+    
+}
+.Between_One_And_Two_Cont1 img{
+    width: 8%;
+}
+.Between_One_And_Two_Img1{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: block;
+    margin: auto;
+}
+.Between_One_And_Two_Cont2{
+    display: flex;
+    align-items: center;
+    /* float: right; */
+    
+    /* bottom: 0px; */
+    /* justify-content: center; */
+}
+.Span_Inside_Between_One_And_Two_Cont1{
+    margin-left: 10px;
+}
+/* .Between_One_And_Two_Cont2 span{
+    position:
+    bottom: 0;
+    left: 0;
+} */
+#hover-1{
+    background-color: green;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width:300px) and (max-width:700px) {
+    .One_cont4_Two{
+        display: flex;
+        flex-wrap: wrap;
+
+        /* border: 1px solid slateblue; */
+        margin: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        padding: 20px 0px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        border-radius: 5px;
+        /* flex-direction: column; */
+    }
+    .One{
+        display: flex;
+        /* border: 1px solid red; */
+        flex-direction: column;
+        border: none;
+
+    }
+    .One_Two{
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .One_One{
+        width: 100%;
+    }
+    .Between_One_And_Two_Grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px 300px;
+    }
+    .Between_One_And_Two_Img1{
+        border: none;
+    }
 }

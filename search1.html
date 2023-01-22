@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+    ">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding:0% ;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width:95%;
+        margin: auto;
+        margin-left:50px;
+        /* border: 2px solid blue; */
+           margin-top:50px; 
+
+    }
+
+    #grid div {
+        border: 0.1px solid grey;
+        border-top: none;
+        border-left: none;
+        /* margin-top:50px; */
+    }
+
+    #grid img {
+
+        width:150px;
+        height:150px;
+        padding: 10px;
+        /* height: 100px; */
+        display: block;
+        margin: auto;
+    }
+
+    #grid>div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .CONTAINER1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gridCont1 {
+        /* border: 1px solid black; */
+        width: 30%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:500;
+        margin-top: 30px;
+        line-height:50px;
+        justify-content: center;
+       padding-block: 50px;
+       margin-left: 30px;
+
+
+    }
+
+    .gridCont2 {
+        width: 100%;
+        /* border: 1px solid rgb(111, 11, 11); */
+    }
+
+    .buttons button {
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: grey;
+        /* border-bottom: 2px solid red; */
+    }
+
+    .buttons {
+        display: block;
+        margin: auto;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+        margin: 0px 30%;
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+    i {
+    color: #1c1212d1;
+}
+
+#manu {
+    width: 30px;
+   
+    margin-left: 30px;
+   
+    cursor: pointer;
+    position: absolute;
+    
+    box-sizing: border-box;
+
+    margin-top: 10px;
+   
+
+
+
+    transition: 1s ease;
+
+
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(16, 14, 14);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+}
+
+#bar1 {
+    transform: translateY(-4px);
+
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.sidebar li a {
+
+    text-decoration: none;
+
+}
+
+
+
+.sidebar {
+    padding: 0px;
+    margin: 0% 20px;
+    transition: 1s ease;
+    display: none;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.icon .bar {
+    background-color: black;
+}
+
+.icon #bar1 {
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #bar2 {
+    opacity: 0;
+
+}
+
+.change {
+
+    height: 80vh;
+    margin: 0;
+    position: absolute;
+    /* font-size:15px; */
+    top: 0px;
+    z-index: -100;
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 84px;
+
+    padding-left: 0%;
+    line-height: 20px;
+    /* padding-left: 10px; */
+    background: whitesmoke;
+    color:black
+}
+
+
+
+
+
+
+
+#firstt {
+    /* background-color: rgb(88, 112, 133); */
+    /* padding-left: 50px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    /* height: 105px; */
+    /* line-height:10px; */
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top:30px ;
+
+
+
+
+}
+
+
+#forsign {
+    display: flex;
+    width: 20%;
+
+    justify-content: space-evenly;
+    /* margin-bottom: 20px; */
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    height: 100px;
+    margin-right: 20px;
+
+}
+
+/* img {
+
+    width: 100%;
+
+} */
+
+#img {
+    margin-left: 20px;
+    width: 10%;
+
+    display: flex;
+    /* border: 2px solid blue; */
+    height: 100px;
+
+
+}
+i {
+    color: hsla(0, 22%, 9%, 0.82);
+}
+
+
+
+
+
+
+#nav {
+    width: 100%;
+    /* border: 2px solid rgb(140, 140, 178); */
+    /* height: 80px; */
+    background: linear-gradient(to bottom, #6699ff 0%, #ccccff 93%);
+    background-color:rgb(232, 115, 73);
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    /* margin: auto; */
+    /* justify-content:center; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    box-sizing: border-box;
+    padding-top:20px;
+    padding-bottom:20px;
+  
+
+
+}
+
+#log i {
+    padding-left: 20px;
+}
+
+
+#sidediv {
+    width: 100%;
+    /* border: 2px solid black; */
+    overflow: scroll;
+    border: none;
+    padding-left: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.706);
+}
+
+#bold {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#veh {
+    /* border: 2px solid purple; */
+    width: 150px;
+    margin-left: 100px;
+    text-align: center;
+    /* margin-top: 15px; */
+    padding:10px;
+    font-size: 17px;
+    box-sizing: border-box;
+
+
+}
+
+
+#veh:hover {
+    background-color: rgba(185, 215, 234, 0.848);
+
+}
+
+
+#search {
+    /* border: 1px solid purple; */
+    margin-left: 100px;
+    /* align-items: center; */
+    margin-top: 15px;
+    /* padding: 20px; */
+    width:580px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    /* padding-right:240px ; */
+
+
+}
+
+
+
+#btn{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:6px;
+    padding-bottom:6px;
+    position: relative;
+    left:-90px;
+    border: none;
+    background-color: white;
+    /* border:1px solid #a5b2b1; */
+    cursor: pointer;
+    
+}
+
+#stor {
+    /* border: 2px solid purple; */
+    width: 170px;
+    margin-left: 60px;
+    
+    font-size: 18px;
+   
+    text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    box-sizing: border-box;
+
+
+}
+
+#stor:hover {
+    background-color: rgba(185, 215, 234, 0.848)
+    /* padding-top:1px;
+    padding-bottom:1px;
+} */
+}
+
+#popular {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 2px solid blue; */
+    list-style: none;
+    line-height: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    gap: 50px;
+    margin-bottom: 100px;
+
+}
+
+#popular li:hover {
+    color: rgb(88, 88, 155);
+    border-bottom: 1px solid black;
+
+}
+#emaizone {
+    margin-top: 30px;
+    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    background-color: rgb(83, 80, 80);
+    padding: 20px;
+    font-size: 20px;
+    color: beige;
+
+}
+
+#emaizone :nth-child(3) {
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin-top: 10px;
+    width:180px;
+    height: 40px;
+    align-items: center;
+    background-color: black;
+}
+
+#emaizone input {
+    height: 100%;
+    /* margin-top:10px; */
+    width: 140px;
+    padding:3px;
+
+}
+
+#emaizone i {
+    color: aliceblue;
+}
+
+
+/* ************************************************************************************************************************************************************************************************************************* */
+#footer {
+    /* margin: auto; */
+    width:100%;
+    border: 1px solid black;
+    background-color: #1f1f1f;
+
+
+
+    color: rgb(151, 162, 161)
+}
+
+#first {
+    width: 100%;
+    display: flex;
+    /* border: 2px solid green; */
+}
+
+.fst {
+    margin: auto;
+    width: 22%;
+    display: flex;
+    font-weight: 100;
+ padding: 50px;
+
+    /* border:4px solid rgb(2, 40, 79); */
+
+}
+
+#first img {
+    margin-top:15=0px;
+    /* border: 1px solid rgb(4, 128, 0); */
+    height: 30px;
+    width: 30px;
+}
+
+hr {
+    border: 0.2px solid rgb(102, 120, 118);
+}
+
+#social {
+    display: flex;
+
+    width: 22%;
+    justify-content: space-between;
+    /* border: 1px solid red;  */
+
+    margin: auto;
+    /* background-color: black; */
+}
+
+#social i {
+    color: aliceblue;
+}
+
+#gridpart {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    gap: 20px;
+    margin-top: 30px;
+    font-weight:200;
+    line-height:30px;
+
+
+
+}
+
+#gridpart li {
+    list-style: none;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+#other {
+    /* border: 2px solid blue; */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+   
+
+}
+
+#zoner {
+    width: 95%;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#zoner div {
+    /* width:85%; */
+    margin: auto;
+    display: flex;
+    /* border: 1px solid green; */
+
+}
+
+#last {
+    width: 96%;
+    /* border: 2px solid green; */
+
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#last p {
+    /* border: 2px solid red; */
+    margin-left: 15px;
+}
+
+#pic img {
+
+    /* width: 95%; */
+    /* border: 2px solid blue; */
+    height: 70px;
+    width: 70px;
+    margin-top: 50px;
+
+}
+
+#apple {
+    display: flex;
+    /* border: 2px solid rgb(234, 54, 54); */
+    width: 25%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+    @media screen and (max-width:1023px) {
+        .CONTAINER1 {
+            flex-direction: column;
+        }
+
+        .gridCont1_first {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .gridCont1_first>div:nth-child(1) {
+            border: 1px solid black;
+        }
+
+        .gridCont1 {
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width:471px) {
+        .CONTAINER1 {
+            flex-direction: column;
+        }
+
+        .gridCont1_first {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 10px solid black; */
+            width: 100%;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        
+
+        .gridCont1 {
+            width: 100vw;
+            /* border: 1px solid rebeccapurple; */
+        }
+
+        .buttons {
+            /* margin: 0px 100px; */
+            margin-left: 90%;
+            margin-top: 10%;
+            margin-right: 50px;
+            justify-content: center;
+            border: 1px solid black;
+
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+    <div id="firstt">
+      <a href="/homepage.html">  <div id="img">
+            <img src="https://document-export.canva.com/qpjs0/DAFX6Lqpjs0/29/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230119T212555Z&X-Amz-Expires=40007&X-Amz-Signature=acad9e4c2d7aa6ec63e7d2e48b5850f81e6847ce2bf608705350ad832c87c51e&X-Amz-SignedHeaders=host&response-expires=Fri%2C%2020%20Jan%202023%2008%3A32%3A42%20GMT"
+                alt="">
+        </div></a>
+        <div id="p">
+            <p>20% OFF ORDERS OVER $100* + FREE GROUND SHIPPING**</p>
+            <p>
+                Eligible Ship-To-Home Items Only. Use Code: JAN2023</p>
+        </div>
+
+
+        <div id="forsign">
+            <div id="log">
+                <a href="">
+                    <h2><i class="fa-solid fa-user"></h2></i>
+
+                    <h4>Sign In</h4>
+                </a>
+            </div>
+
+            <div id="cart"><a href="">
+                    <h2> <i class="fa-solid fa-cart-shopping"></h2></i>
+                    <h4>Cart</h4>
+                </a>
+            </div>
+
+            <!-- <button class="dropdown"></button> -->
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <nav id="nav">
+
+        <div id="manu" onclick="onclickmenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+            <p id="m">menu</p>
+        </div>
+    
+           <ul class="sidebar" id="sidebar">
+            <div id="sidediv">
+                <li id="bold"><a href="">Most Popular</a></li>
+                <li><a href="">Bateries</a></li>
+                <li><a href="">Engine Oilr</a></li>
+                <li><a href=""> Brake Padsr</a></li>
+                <li><a href=""> Brake Rotorsr</a></li>
+                <li><a href="">Show More</a></li>
+    
+    
+                <hr>
+                <li id="bold"><a href="">Shop All</a></li>
+                <li><a href="">Auto Parts</a></li>
+                <li><a href="">Interior Accessories</a></li>
+                <li><a href="">Exterior Accessories</a></li>
+                <li><a href="">Truck and Towing</a></li>
+                <li><a href="">Tools</a></li>
+                <li><a href="">Chemicals, Oil & Wash</a></li>
+                <li><a href="">Performance</a></li>
+                <hr>
+                <li id="bold"><a href="">Shop By</a></li>
+                <li><a href="">Top Deals</a></li>
+                <li><a href="">Local Store Ad</a></li>
+                <li><a href="">Rebates</a></li>
+                <hr>
+                <li id="bold"><a href="">Shop By</a></li>
+                <li><a href="">Shop By Make</a></li>
+                <li><a href=""> Shop By Model</a></li>
+                <li><a href="">Shop By Brand</a></li>
+                <hr>
+                <li id="bold"><a href="">Trustworthy Advice</a></li>
+                <li><a href="">Advaice & How-TO's</a></li>
+                <li><a href="">Battery Guide </a></li>
+                <li><a href="">Fix Finder</a></li>
+                <li><a href="">Find a Repair Shop</a></li>
+                <li><a href="">Repair Help</a></li>
+                <li><a href="">In-Store Services</a></li>
+    
+        </ul>
+    
+        </div>
+        <div id="veh">
+            <a href="">
+                <p><i class="fa-solid fa-car"></i> Add Vehicle <i class="fa-solid fa-greater-than"> </i> </p>
+            </a>
+        </div>
+    
+        <div id="submit">
+        <input type="search" id="search" value="" placeholder="Find Parts And Product" > 
+        <button id="btn">Search</button>  </div>
+    
+        <a href="">
+            <div id="stor">
+    
+                <p><i class="fa-solid fa-location-dot"> </i> Select Store</p>
+            </div>
+        </a>
+    
+    </nav>
+    <!-- ******************************************************************************** -->
+    <div class="CONTAINER1">
+        <div class="gridCont1">
+            <div class="gridCont1_first">
+                <h2>FILTER</h2>
+                <div>
+                    <input type="checkbox" name="check" id="firstCheckbox">
+                    <label for="firstCheckbox">Universal Products</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="check" id="secondCheckbox">
+                    <label for="secondCheckbox">Vehicle-Specific Products</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="gridCont2">
+            <div id="grid">
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m13670005_Prod_Battery.jpg" alt="">
+                    <p>Battery</p>
+                </div>
+
+                <div class="BorderCover"><img
+                        src="https://www.autozone.com/images/MEDIA_ProductCatalog/m3490381_prd-Fuse-and-Accessories.jpg"
+                        alt="">
+                    <p>Fuse and Accessories</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m13600028_Prod_Jump_Starter.jpg"
+                        alt="">
+                    <p>Jumper Starter</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m3490477_prd-Code-Reader.jpg"
+                        alt="">
+                    <p>Code Reader</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m14540013_Prod_Battery_Charger.jpg"
+                        alt="">
+                    <p>Battery Charger</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m13950001_Prod_Battery_Terminal.jpg"
+                        alt="">
+                    <p>Battery Terminal</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m3490551_prd-Battery-Cable.jpg"
+                        alt="">
+                    <p>-Battery Cable</p>
+                </div>
+
+                <div><img
+                        src="https://www.autozone.com/images/MEDIA_ProductCatalog/m3490490_prd-Motorcycle-and-Power-Sport-Battery.jpg"
+                        alt="">
+                    <p>Power Sport Battery</p>
+                </div>
+
+                <div><img src="https://www.autozone.com/images/MEDIA_ProductCatalog/m7910004_prd-Lubricant-Grease.jpg"
+                        alt="">
+                    <p>Lubricant Grease</p>
+                </div>
+
+                <div><img
+                        src="https://www.autozone.com/images/MEDIA_ProductCatalog/m3490346_prd-Electrical-Wire-Connector.jpg"
+                        alt="">
+                    <p>Electrical Wire Connector</p>
+                </div>
+                <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/AUX12/image/2/" alt="">
+                    <p>Auxiliary Battery</p>
+                </div>
+                <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/eqp/3802/image/2/" alt="">
+                    <p>Professional Code Reader</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <span class="buttons">
+        <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button>
+    </span>
+<!-- ************************************************************************ -->
+<div id="popular">
+
+    <div>
+        <h3>Popular Brands</h3>
+        <li>Duralast Gold Chassis</li>
+        <li>AC Pro</li>
+        <li> AC Delco</li>
+        <li> Avalanche</li>
+        <li>Castrol</li>
+        <li>Show All</li>
+    </div>
+
+    <div>
+        <h3>Popular Makes</h3>
+        <li>Ford Parts</li>
+        <li>Chevy Parts</li>
+        <li> Honda Parts</li>
+        <li>Toyota Parts</li>
+        <li>Dodge Parts</li>
+        <li>Show All</li>
+    </div>
+    <div>
+        <h3>Popular Models</h3>
+        <li>Honda Accord Parts</li>
+        <li>Honda Civic Parts</li>
+        <li>Ford F150 Parts</li>
+        <li>Chevy Silverado 1500 Parts</li>
+        <li>Toyota Camry Partss</li>
+        <li>Show All</li>
+    </div>
+
+
+    <div>
+        <h3>Advice and How-To's</h3>
+        <li>What Does the Battery light Mean?</li>
+        <li>How Long Does an Oil Change Take?</li>
+        <li>Why is My Check Engine Light On?</li>
+        <li>How to Replace Brakes</li>
+        <li>How to Replace a Car Battery</li>
+        <li>Show All</li>
+    </div>
+
+</div>
+
+
+<!-- ******************************************************************************************** -->
+
+
+<div id="emaizone">
+    <div>
+        <h3> <i class="fa-regular fa-envelope"></i> GET IN THE ZONE</h3>
+    </div>
+
+    <div>
+        <p>Subscribe to get the latest deals, promotions, and offerings.</p>
+    </div>
+
+
+
+    <div>
+        <input type="email" placeholder="Email">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+</div>
+<!-- ******************footer*************************************************** -->
+<footer id="footer">
+    <div id="first">
+        <div class="fst"><img src="https://www.autozone.com/cdn/icons/az_icons/az_locator.svg" alt="">
+            <h3> Locate A Store</h3>
+        </div>
+
+        <div class="fst"><img src="https://www.autozone.com/images/footer/az-box.svg" alt="">
+            <h3> Track Your Order</h3>
+        </div>
+
+
+        <div class="fst"><img src="https://www.autozone.com/images/footer/az-compose.svg" alt="">
+            <h3>We're Hiring!</h3>
+        </div>
+        <!-- </div> -->
+
+        <!-- <hr> -->
+        <div id="social">
+
+            <div>
+                <h1><i class="fa-brands fa-facebook"></i></h1>
+            </div>
+            <div>
+                <h1> <i class="fa-brands fa-twitter"></i></h1>
+            </div>
+
+            <div>
+                <h1> <i class="fa-brands fa-youtube"></i></h1>
+            </div>
+            <div>
+                <h1><i class="fa-brands fa-instagram"></i></h1>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div id="gridpart">
+        <div>
+            <h2>SHOP</h2>
+            <li>AutoZone Locations</li>
+            <li>Vehicle Make</li>
+            <li>Vehicle Model</li>
+            <li>Shop All Brands</li>
+            <li>Vehicle VIN Lookup</li>
+            <li>Gift Cards</li>
+            <li>Discounts & Coupons</li>
+            <li>Local Store Ad</li>
+            <li>Featured Brands</li>
+
+        </div>
+        <div>
+            <h2>PRODUCTS</h2>
+            <li> Auto Parts</li>
+            <li>Interior Accessories</li>
+            <li>Exterior Accessories</li>
+            <li>Truck</li>
+            <li>Tools</li>
+            <li>Chemicals</li>
+            <li>Performance</li>
+
+        </div>
+        <div>
+            <h2>HELP</h2>
+            <li>Track My Order</li>
+            <li>Contact Us</li>
+            <li>My Account</li>
+            <li>FAQs</li>
+            <li>Return Policies</li>
+            <li>Product Recalls</li>
+            <li>Product Ingredient Disclosures</li>
+            <li>Web Accessibility</li>
+
+        </div>
+        <div>
+            <h2> ABOUT US</h2>
+            <li>Careers</li>
+            <li>About AutoZone</li>
+            <li>Investor Relations</li>
+            <li>Affiliate Program</li>
+            <li>Vendor Information</li>
+            <li>ESG</li>
+
+        </div>
+        <div>
+            <h2>SERVICES</h2>
+            <li>Buy Online, Pick Up in Store</li>
+            <li>Loan-A-Tool</li>
+            <li>In-Store Services</li>
+            <li>Repair Help</li>
+            <li>Mobile App</li>
+            <li>Find a Repair Shop</li>
+            <li>AutoZone Rewards</li>
+            <li>Sign Up for Text Messages</li>
+        </div>
+    </div>
+    <div id="other">
+        <h3>OTHER AUTOZONE SITES</h3>
+    </div>
+    <div id="zoner">
+        <div id="zo">
+            <div>
+                <h5>AutoZoner Services</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>AutoZoner Benefits Login</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>AutoZone Pro
+                </h5>
+            </div>
+            <hr>
+            <div>
+                <h5>ALLDATA diy</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>ALLDATA Repair
+                </h5>
+            </div>
+            <hr>
+            <div>
+                <h5>Duralast</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>Duralast</h5>
+            </div>
+            <hr>
+            <div>
+                <h5>AutoZone MX</h5>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <hr>
+    <div id="last">
+        <div id="pic">
+            <img src="https://www.autozone.com/images/footer/digicert.png" alt="">
+        </div>
+        <div>
+            <p>Terms & Conditions
+                Privacy Policy
+                Return Policy
+                CA Supply Chain Disclosure
+                Your California and Other State Law Privacy Rights <br>
+                Insurance & Risk Management
+            <p> Sitemap</p>
+            <p> © 2001-2023 AutoZone, Inc. All Rights Reserved</p>
+        </div>
+        <!-- </div> -->
+        <div id="apple">
+            <div>
+                <img src="https://www.autozone.com/cdn/images/B2C/US/media/Landing/MobileApp/app_store.svg" alt="">
+            </div>
+            <div>
+                <img src="https://www.autozone.com/cdn/images/B2C/US/media/Landing/MobileApp/google-play.svg"
+                    alt="">
+            </div>
+        </div>
+
+</footer>
+
+
+
+
+
+
+</body>
+<script src="search1.js"></script>
+
+</html>

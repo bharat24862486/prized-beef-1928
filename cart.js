@@ -865,7 +865,15 @@ function addItemsCart(arr) {
 }
 
 // item added cart code end
-
+CheckOut.addEventListener('click',()=>{
+    totalPrice = []
+    let obj = {
+        totalPrice : PriceShow.innerText
+    }
+    totalPrice.push(obj)
+    localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
+    // console.log(PriceShow.innerText)
+})
 
 // checkout
 

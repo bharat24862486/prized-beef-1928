@@ -1,1020 +1,1049 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./battery.css" />
-  </head>
-  <body>
-    <div style="width: 100%; height: 200px"></div>
-    <div id="orange-line"></div>
-    <div id="rec-1">
-      <div id="li-1">
-        <h4>Add Your Vehicle</h4>
-        <p>
-          Get an exact fit for<br />
-          your vehicle
-        </p>
-      </div>
-      <div id="li-2">
-        <select name="Year" id="">
-          <option value="1">1 | Year</option>
-          <option value="">2023</option>
-          <option value="">2022</option>
-          <option value="">2021</option>
-          <option value="">2020</option>
-          <option value="">2019</option>
-          <option value="">2018</option>
-          <option value="">2017</option>
-          <option value="">2016</option>
-          <option value="">2015</option>
-        </select>
-      </div>
-      <div id="li-3">
-        <select name="Make" id="">
-          <option value="Benz">2 | Make</option>
-          <option value="">Acura</option>
-          <option value="">Alfa Romeo</option>
-          <option value="">Aston Martin</option>
-          <option value="">Audi</option>
-          <option value="">Autocar</option>
-        </select>
-      </div>
-      <div id="li-4">
-        <select name="Model" id="">
-          <option value="Gls">3 | Model</option>
-          <option value="">Integra</option>
-          <option value="">Integra A-Spec</option>
-          <option value="">MDX 2WD</option>
-          <option value="">MDX 2WD</option>
-          <option value="">MDX SH-AWD</option>
-        </select>
-      </div>
-      <div id="li-5">
-        <select name="Engine" id="">
-          <option value="Awd">4 | Engine</option>
-        </select>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./battery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+    ">
+</head>
+
+<body
+  style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+  <div id="firstt">
+  <a href="/homepage.html"> <div id="img">
+      <img src="/day-2/0001 (1).png" alt="">
+    </div></a> 
+    <div id="p">
+      <p>20% OFF ORDERS OVER $100* + FREE GROUND SHIPPING**</p>
+      <p>
+        Eligible Ship-To-Home Items Only. Use Code: JAN2023</p>
     </div>
-    <!-- top finished -->
-    <!-- main part-1 -->
-    <div
-      style="
+
+
+    <div id="forsign">
+      <div id="log">
+        <a href="day-2/signUp.html">
+          <h2><i class="fa-solid fa-user"></h2></i>
+
+          <h4>Log In</h4>
+        </a>
+      </div>
+
+      <div id="cart"><a href="/cart.html">
+          <h2> <i class="fa-solid fa-cart-shopping"></h2></i>
+          <h4>Cart</h4>
+        </a>
+      </div>
+
+      <!-- <button class="dropdown"></button> -->
+
+    </div>
+
+  </div>
+
+  <nav id="nav">
+
+    <div id="manu" onclick="onclickmenu()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+      <p id="m">menu</p>
+    </div>
+
+    <ul class="sidebar" id="sidebar">
+      <div id="sidediv">
+        <li id="bold"><a href="">Most Popular</a></li>
+        <li><a href="/battery.html">Bateries</a></li>
+        <li><a href="">Engine Oil</a></li>
+        <li><a href=""> Brake Pads</a></li>
+        <li><a href=""> Brake Rotors</a></li>
+        <li><a href="">Show More</a></li>
+
+
+        <hr>
+        <li id="bold"><a href="">Shop All</a></li>
+        <li><a href="">Auto Parts</a></li>
+        <li><a href="">Interior Accessories</a></li>
+        <li><a href="">Exterior Accessories</a></li>
+        <li><a href="">Truck and Towing</a></li>
+        <li><a href="">Tools</a></li>
+        <li><a href="">Chemicals, Oil & Wash</a></li>
+        <li><a href="">Performance</a></li>
+        <hr>
+        <li id="bold"><a href="">Shop By</a></li>
+        <li><a href="">Top Deals</a></li>
+        <li><a href="">Local Store Ad</a></li>
+        <li><a href="">Rebates</a></li>
+        <hr>
+        <li id="bold"><a href="">Shop By</a></li>
+        <li><a href="">Shop By Make</a></li>
+        <li><a href=""> Shop By Model</a></li>
+        <li><a href="">Shop By Brand</a></li>
+        <hr>
+        <li id="bold"><a href="">Trustworthy Advice</a></li>
+        <li><a href="">Advaice & How-TO's</a></li>
+        <li><a href="">Battery Guide </a></li>
+        <li><a href="">Fix Finder</a></li>
+        <li><a href="">Find a Repair Shop</a></li>
+        <li><a href="">Repair Help</a></li>
+        <li><a href="">In-Store Services</a></li>
+
+    </ul>
+
+    </div>
+    <div id="veh">
+      <a href="">
+        <p><i class="fa-solid fa-car"></i> Add Vehicle <i class="fa-solid fa-greater-than"> </i> </p>
+      </a>
+    </div>
+
+    <div id="submit">
+      <input type="search" id="search" value="" placeholder="Find Parts And Product">
+      <button id="btn">Search</button>
+    </div>
+
+    <a href="">
+      <div id="stor">
+
+        <p><i class="fa-solid fa-location-dot"> </i> Select Store</p>
+      </div>
+    </a>
+
+  </nav>
+
+
+
+
+
+
+
+  <div style="width: 100%;height: 30px; border: none;"></div>
+  <div id="orange-line"></div>
+  <div id="rec-1">
+    <div id="li-1">
+      <h4>Add Your Vehicle</h4>
+      <p>
+        Get an exact fit for<br />
+        your vehicle
+      </p>
+    </div>
+    <div id="li-2">
+      <select name="Year" id="">
+        <option value="1">1 | Year</option>
+        <option value="">2023</option>
+        <option value="">2022</option>
+        <option value="">2021</option>
+        <option value="">2020</option>
+        <option value="">2019</option>
+        <option value="">2018</option>
+        <option value="">2017</option>
+        <option value="">2016</option>
+        <option value="">2015</option>
+      </select>
+    </div>
+    <div id="li-3">
+      <select name="Make" id="">
+        <option value="Benz">2 | Make</option>
+        <option value="">Acura</option>
+        <option value="">Alfa Romeo</option>
+        <option value="">Aston Martin</option>
+        <option value="">Audi</option>
+        <option value="">Autocar</option>
+      </select>
+    </div>
+    <div id="li-4">
+      <select name="Model" id="">
+        <option value="Gls">3 | Model</option>
+        <option value="">Integra</option>
+        <option value="">Integra A-Spec</option>
+        <option value="">MDX 2WD</option>
+        <option value="">MDX 2WD</option>
+        <option value="">MDX SH-AWD</option>
+      </select>
+    </div>
+    <div id="li-5">
+      <select name="Engine" id="">
+        <option value="Awd">4 | Engine</option>
+      </select>
+    </div>
+  </div>
+  <!-- top finished -->
+  <!-- main part-1 -->
+  <div style="
         display: flex;
         justify-content: space-between;
         /* width: 70%; */
         /* margin-left: 30%; */
         padding-top: 20px;
         padding-bottom: 20px;
-      "
-    >
-      <img
-        style="width: 48%"
-        src="https://www.autozone.com/cdn/images/B2C/US/media/FY23/P0506/Catbans/_2S-one-catban9-battery-d.jpg"
-        alt=""
-      />
-      <img
-        style="width: 48%"
-        src="https://www.autozone.com/cdn/images/B2C/US/media/FY23/P0506/Catbans/_2S-two-catban9-battery-d.jpg"
-        alt=""
-      />
+      ">
+    <img style="width: 48%"
+      src="https://www.autozone.com/cdn/images/B2C/US/media/FY23/P0506/Catbans/_2S-one-catban9-battery-d.jpg" alt="" />
+    <img style="width: 48%"
+      src="https://www.autozone.com/cdn/images/B2C/US/media/FY23/P0506/Catbans/_2S-two-catban9-battery-d.jpg" alt="" />
+  </div>
+  <!-- main part-1 ends -->
+  <!-- empty append -->
+  <div id="rec-2">
+    <div>
+      <p1>1-12 of 212 Results</p1>
     </div>
-    <!-- main part-1 ends -->
-    <!-- empty append -->
-    <div id="rec-2">
-      <div>
-        <p1>1-12 of 212 Results</p1>
-      </div>
-      <div id="sort">
-        <p>Sort By</p>
-        <select name="" id="">
-          <option value="">Feature</option>
-          <option value="">Price Low To High</option>
-        </select>
-      </div>
-      <div>
-        <p>Items per page</p>
-        <select name="" id="">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-        </select>
-      </div>
+    <div id="sort">
+      <p>Sort By</p>
+      <select name="" id="">
+        <option value="">Feature</option>
+        <option value="">Price Low To High</option>
+      </select>
     </div>
+    <div>
+      <p>Items per page</p>
+      <select name="" id="">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+    </div>
+  </div>
 
 
-    <div id="cont">
-      <div class="One">
-        <div class="One_One">
-          <div class="img_for_One_One">
-            <img
-              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/"
-              alt=""/>
-          </div>
-  
-          <div class="img_for_One_One2">
-            <h2 class="H2_One">Duralast Platinum AGM Battery H8-AGM Group Size 49 900 CCA</h2>
-            <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
-            <span>&#124;</span>
-            <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
-  
-            <div class="starsCont">
-              <div class="starCont1">
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-              </div>
-              <div class="starCont2">
-                <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
-                <!-- <a href="" class="a_With_Black">Write A Review</a> -->
-              </div>
+  <div id="cont">
+    <div class="One">
+      <div class="One_One">
+        <div class="img_for_One_One">
+          <a href="itemOne.html"> <img
+              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/" alt="" /></a>
+        </div>
 
+        <div class="img_for_One_One2">
+          <h2 class="H2_One">Duralast Platinum AGM Battery H8-AGM Group Size 49 900 CCA</h2>
+          <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
+          <span>&#124;</span>
+          <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
+
+          <div class="starsCont">
+            <div class="starCont1">
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
             </div>
-            <br />
-            <!-- <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
+            <div class="starCont2">
+              <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
+              <!-- <a href="" class="a_With_Black">Write A Review</a> -->
+            </div>
+
+          </div>
+          <br />
+          <!-- <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
             <span>&#124;</span>
             <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span> -->
-  
-            <div class="One_cont2">
-              <img
-                src="https://www.autozone.com/images/warranty/1-year-warranty.svg"
-                alt=""
-              />
-              <a href="" class="a_With_Black">1-Year Warranty</a>
-            </div>
-            <br />
-            <br />
+
+          <div class="One_cont2">
+            <img src="https://www.autozone.com/images/warranty/1-year-warranty.svg" alt="" />
+            <a href="" class="a_With_Black">1-Year Warranty</a>
           </div>
-        </div>
-  
-        <div class="One_Two">
-          <div class="One_Two_One">
-            <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
-            <p>&nbsp; Free Next Day Delivery Eligible</p>
-          </div>
-  
-          <hr />
-  
-          <div class="One_cont3">
-            <div class="One_cont3_one">
-              <span class="little_dollar">$</span
-              ><span class="big_dollar">239</span
-              ><span class="little_dollar">99</span>
-            </div>
-          </div>
-          <p>
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <span
-              >&nbsp; Pay in 4 interest-free payments on purchases of
-              $30-$1,500.<a href="" class="a_Colored">Learn More</a></span
-            >
-          </p>
-          <div class="One_cont4">
-            <div class="One_cont4_One">
-              <div class="One_cont4_One_One">
-                <input type="radio" name="radio1" id="radio1" />
-              </div>
-              <div class="One_cont4_One_Two">
-                <label for="radio"
-                  >Free In-Store or Curbside Pick Up <br />
-                  <span class="red1">Not Available at 4394 Summer Ave</span>
-                  <br /><span class="green1">Available near you at 23</span>&nbsp;
-                  <a href="" class="Cont4_small"> Nearby Stores</a></label
-                >
-              </div>
-            </div>
-  
-            <div class="One_cont4_Two">
-              <div class="One_cont4_Two_One">
-                <input type="radio" name="radio2" id="radio2" />
-              </div>
-              <div class="One_cont4_Two_Two">
-                <label for="radio"
-                  >Home Delivery <br />
-                  <img
-                    src="https://www.autozone.com/images/ndd-icon.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Delivery_Truck"
-                    >Free Next Day Delivery Eligible
-                  </span>
-                  <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_Font_Weight">Order within </span>
-                  19hrs and 47min
-                  <span class="Cont4_Decrease_Font_Weight">to arrive </span>
-                  <span class="green1">Tomorrow </span><br />
-                  <img
-                    src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
-                  <br />
-                  &nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
-                  <span class="green1">Jan 18</span>
-                </label>
-              </div>
-            </div>
-          </div>
-  
-          <button id="ADD_TO_CART">ADD TO CART</button>
+          <br />
+          <br />
         </div>
       </div>
-      <div class="One">
-        <div class="One_One">
-          <div class="img_for_One_One">
-            <img
-              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H9-AGM/image/2/"
-              alt=""
-            />
+
+      <div class="One_Two">
+        <div class="One_Two_One">
+          <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+          <p>&nbsp; Free Next Day Delivery Eligible</p>
+        </div>
+
+        <hr />
+
+        <div class="One_cont3">
+          <div class="One_cont3_one">
+            <span class="little_dollar">$</span><span class="big_dollar">239</span><span class="little_dollar">99</span>
           </div>
-  
-          <div class="img_for_One_One2">
-            <h2 class="H2_One">Duralast Platinum AGM Battery H9-AGM Group Size H9/LN6 950 CCA</h2>
-            <!-- <a href="" class="a_With_Black">Shop All Durent</a> -->
-            <span class="One_span_One">Part #H9-AGM &nbsp; &nbsp; </span>
-            <span>&#124;</span>
-            <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
-            <div class="starsCont">
-              <div class="starCont1">
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-              </div>
-              <div class="starCont2">
-                <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
-                <!-- <a href="" class="a_With_Black">Write A Review</a> -->
-              </div>
+        </div>
+        <p>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
+            alt="" />
+          <span>&nbsp; Pay in 4 interest-free payments on purchases of
+            $30-$1,500.<a href="" class="a_Colored">Learn More</a></span>
+        </p>
+        <div class="One_cont4">
+          <div class="One_cont4_One">
+            <div class="One_cont4_One_One">
+              <input type="radio" name="radio1" id="radio1" />
             </div>
-            <br />
-            <!-- <span class="One_span_One">Part #H9-AGM &nbsp; &nbsp; </span>
+            <div class="One_cont4_One_Two">
+              <label for="radio">Free In-Store or Curbside Pick Up <br />
+                <span class="red1">Not Available at 4394 Summer Ave</span>
+                <br /><span class="green1">Available near you at 23</span>&nbsp;
+                <a href="" class="Cont4_small"> Nearby Stores</a></label>
+            </div>
+          </div>
+
+          <div class="One_cont4_Two">
+            <div class="One_cont4_Two_One">
+              <input type="radio" name="radio2" id="radio2" />
+            </div>
+            <div class="One_cont4_Two_Two">
+              <label for="radio">Home Delivery <br />
+                <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+                <span class="Cont4_Delivery_Truck">Free Next Day Delivery Eligible
+                </span>
+                <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_Font_Weight">Order within </span>
+                19hrs and 47min
+                <span class="Cont4_Decrease_Font_Weight">to arrive </span>
+                <span class="green1">Tomorrow </span><br />
+                <img src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg" alt="" />
+                <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
+                <br />
+                &nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
+                <span class="green1">Jan 18</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button id="ADD_TO_CART">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="One">
+      <div class="One_One">
+        <div class="img_for_One_One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H9-AGM/image/2/" alt="" />
+        </div>
+
+        <div class="img_for_One_One2">
+          <h2 class="H2_One">Duralast Platinum AGM Battery H9-AGM Group Size H9/LN6 950 CCA</h2>
+          <!-- <a href="" class="a_With_Black">Shop All Durent</a> -->
+          <span class="One_span_One">Part #H9-AGM &nbsp; &nbsp; </span>
+          <span>&#124;</span>
+          <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
+          <div class="starsCont">
+            <div class="starCont1">
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+            </div>
+            <div class="starCont2">
+              <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
+              <!-- <a href="" class="a_With_Black">Write A Review</a> -->
+            </div>
+          </div>
+          <br />
+          <!-- <span class="One_span_One">Part #H9-AGM &nbsp; &nbsp; </span>
             <span>&#124;</span>
             <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span> -->
-  
-            <div class="One_cont2">
-              <img
-                src="https://www.autozone.com/images/warranty/1-year-warranty.svg"
-                alt=""
-              />
-              <a href="" class="a_With_Black">1-Year Warranty</a>
-            </div>
-            <br />
-            <br />
+
+          <div class="One_cont2">
+            <img src="https://www.autozone.com/images/warranty/1-year-warranty.svg" alt="" />
+            <a href="" class="a_With_Black">1-Year Warranty</a>
           </div>
-        </div>
-  
-        <div class="One_Two">
-          <div class="One_Two_One">
-            <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
-            <p>&nbsp; Free Next Day Delivery Eligible</p>
-          </div>
-  
-          <hr />
-  
-          <div class="One_cont3">
-            <div class="One_cont3_one">
-              <span class="little_dollar">$</span
-              ><span class="big_dollar">239</span
-              ><span class="little_dollar">99</span>
-            </div>
-          </div>
-          <p>
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <span
-              >&nbsp; Pay in 4 interest-free payments on purchases of
-              $30-$1,500.<a href="" class="a_Colored">Learn More</a></span
-            >
-          </p>
-          <div class="One_cont4">
-            <div class="One_cont4_One">
-              <div class="One_cont4_One_One">
-                <input type="radio" name="radio1" id="radio1" />
-              </div>
-              <div class="One_cont4_One_Two">
-                <label for="radio"
-                  >Free In-Store or Curbside Pick Up <br />
-                  <span class="red1">Not Available at 4394 Summer Ave</span>
-                  <br /><span class="green1">Available near you at 23</span>&nbsp;
-                  <a href="" class="Cont4_small"> Nearby Stores</a></label
-                >
-              </div>
-            </div>
-  
-            <div class="One_cont4_Two">
-              <div class="One_cont4_Two_One">
-                <input type="radio" name="radio2" id="radio2" />
-              </div>
-              <div class="One_cont4_Two_Two">
-                <label for="radio"
-                  >Home Delivery <br />
-                  <img
-                    src="https://www.autozone.com/images/ndd-icon.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Delivery_Truck"
-                    >Free Next Day Delivery Eligible
-                  </span>
-                  <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_Font_Weight">Order within </span>
-                  19hrs and 47min
-                  <span class="Cont4_Decrease_Font_Weight">to arrive </span>
-                  <span class="green1">Tomorrow </span><br />
-                  <img
-                    src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
-                  <br />
-                  &nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
-                  <span class="green1">Jan 18</span>
-                </label>
-              </div>
-            </div>
-          </div>
-  
-          <button id="ADD_TO_CART">ADD TO CART</button>
+          <br />
+          <br />
         </div>
       </div>
-      <div class="One">
-        <div class="One_One">
-          <div class="img_for_One_One">
-            <img
-              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/"
-              alt=""
-            />
+
+      <div class="One_Two">
+        <div class="One_Two_One">
+          <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+          <p>&nbsp; Free Next Day Delivery Eligible</p>
+        </div>
+
+        <hr />
+
+        <div class="One_cont3">
+          <div class="One_cont3_one">
+            <span class="little_dollar">$</span><span class="big_dollar">299</span><span class="little_dollar">99</span>
           </div>
-  
-          <div class="img_for_One_One2">
-            <h2 class="H2_One">Continent Radiator Hose D72592</h2>
-            <a href="" class="a_With_Black">Shop All Continental</a>
-  
-            <div class="starsCont">
-              <div class="starCont1">
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-              </div>
-              <div class="starCont2">
-                <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
-                <!-- <a href="" class="a_With_Black">Write A Review</a> -->
-              </div>
+        </div>
+        <p>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
+            alt="" />
+          <span>&nbsp; Pay in 4 interest-free payments on purchases of
+            $30-$1,500.<a href="" class="a_Colored">Learn More</a></span>
+        </p>
+        <div class="One_cont4">
+          <div class="One_cont4_One">
+            <div class="One_cont4_One_One">
+              <input type="radio" name="radio1" id="radio1" />
             </div>
-            <br />
-            <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
-            <span>&#124;</span>
-            <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
-  
-            <div class="One_cont2">
-              <img
-                src="https://www.autozone.com/images/warranty/1-year-warranty.svg"
-                alt=""
-              />
-              <a href="" class="a_With_Black">1-Year Warranty</a>
+            <div class="One_cont4_One_Two">
+              <label for="radio">Free In-Store or Curbside Pick Up <br />
+                <span class="red1">Not Available at 4394 Summer Ave</span>
+                <br /><span class="green1">Available near you at 23</span>&nbsp;
+                <a href="" class="Cont4_small"> Nearby Stores</a></label>
             </div>
-            <br />
-            <br />
+          </div>
+
+          <div class="One_cont4_Two">
+            <div class="One_cont4_Two_One">
+              <input type="radio" name="radio2" id="radio2" />
+            </div>
+            <div class="One_cont4_Two_Two">
+              <label for="radio">Home Delivery <br />
+                <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+                <span class="Cont4_Delivery_Truck">Free Next Day Delivery Eligible
+                </span>
+                <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_Font_Weight">Order within </span>
+                19hrs and 47min
+                <span class="Cont4_Decrease_Font_Weight">to arrive </span>
+                <span class="green1">Tomorrow </span><br />
+                <img src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg" alt="" />
+                <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
+                <br />
+                &nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
+                <span class="green1">Jan 18</span>
+              </label>
+            </div>
           </div>
         </div>
 
-
- 
-  
-        <div class="One_Two">
-          <div class="One_Two_One">
-            <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
-            <p>&nbsp; Free Next Day Delivery Eligible</p>
-          </div>
-  
-          <hr />
-  
-          <div class="One_cont3">
-            <div class="One_cont3_one">
-              <span class="little_dollar">$</span
-              ><span class="big_dollar">239</span
-              ><span class="little_dollar">99</span>
-
-            </div>
-          </div>
-          <p>
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <span
-              >&nbsp; Pay in 4 interest-free payments on purchases of
-              $30-$1,500.<a href="" class="a_Colored">Learn More</a></span
-            >
-          </p>
-          <div class="One_cont4">
-            <div class="One_cont4_One">
-              <div class="One_cont4_One_One">
-                <input type="radio" name="radio1" id="radio1" />
-              </div>
-              <div class="One_cont4_One_Two">
-                <label for="radio"
-                  >Free In-Store or Curbside Pick Up <br />
-                  <span class="red1">Not Available at 4394 Summer Ave</span>
-                  <br /><span class="green1">Available near you at 23</span>&nbsp;
-                  <a href="" class="Cont4_small"> Nearby Stores</a></label
-                >
-              </div>
-            </div>
-  
-            <div class="One_cont4_Two">
-              <div class="One_cont4_Two_One">
-                <input type="radio" name="radio2" id="radio2" />
-              </div>
-              <div class="One_cont4_Two_Two">
-                <label for="radio"
-                  >Home Delivery <br />
-                  <img
-                    src="https://www.autozone.com/images/ndd-icon.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Delivery_Truck"
-                    >Free Next Day Delivery Eligible
-                  </span>
-                  <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_Font_Weight">Order within </span>
-                  19hrs and 47min
-                  <span class="Cont4_Decrease_Font_Weight">to arrive </span>
-                  <span class="green1">Tomorrow </span><br />
-                  <img
-                    src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
-                  <br />
-                  &nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
-                  <span class="green1">Jan 18</span>
-                </label>
-              </div>
-            </div>
-          </div>
-  
-          <button id="ADD_TO_CART">ADD TO CART</button>
-        </div>
-      </div>
-      <div class="One">
-        <div class="One_One">
-          <div class="img_for_One_One">
-            <img
-              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/"
-              alt=""
-            />
-          </div>
-  
-          <div class="img_for_One_One2">
-            <h2 class="H2_One">Continental Radiator Hose D72592</h2>
-            <a href="" class="a_With_Black">Shop All Continental</a>
-  
-            <div class="starsCont">
-              <div class="starCont1">
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-              </div>
-              <div class="starCont2">
-                <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
-                <!-- <a href="" class="a_With_Black">Write A Review</a> -->
-              </div>
-            </div>
-            <br />
-            <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
-            <span>&#124;</span>
-            <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
-  
-            <div class="One_cont2">
-              <img
-                src="https://www.autozone.com/images/warranty/1-year-warranty.svg"
-                alt=""
-              />
-              <a href="" class="a_With_Black">1-Year Warranty</a>
-            </div>
-            <br />
-            <br />
-          </div>
-        </div>
-  
-        <div class="One_Two">
-          <div class="One_Two_One">
-            <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
-            <p>&nbsp; Free Next Day Delivery Eligible</p>
-          </div>
-  
-          <hr />
-  
-          <div class="One_cont3">
-            <div class="One_cont3_one">
-              <span class="little_dollar">$</span
-              ><span class="big_dollar">239</span
-              ><span class="little_dollar">99</span>
-            </div>
-          </div>
-          <p>
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <span
-              >&nbsp; Pay in 4 interest-free payments on purchases of
-              $30-$1,500.<a href="" class="a_Colored">Learn More</a></span
-            >
-          </p>
-          <div class="One_cont4">
-            <div class="One_cont4_One">
-              <div class="One_cont4_One_One">
-                <input type="radio" name="radio1" id="radio1" />
-              </div>
-              <div class="One_cont4_One_Two">
-                <label for="radio"
-                  >Free In-Store or Curbside Pick Up <br />
-                  <span class="red1">Not Available at 4394 Summer Ave</span>
-                  <br /><span class="green1">Available near you at 23</span>&nbsp;
-                  <a href="" class="Cont4_small"> Nearby Stores</a></label
-                >
-              </div>
-            </div>
-  
-            <div class="One_cont4_Two">
-              <div class="One_cont4_Two_One">
-                <input type="radio" name="radio2" id="radio2" />
-              </div>
-              <div class="One_cont4_Two_Two">
-                <label for="radio"
-                  >Home Delivery <br />
-                  <img
-                    src="https://www.autozone.com/images/ndd-icon.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Delivery_Truck"
-                    >Free Next Day Delivery Eligible
-                  </span>
-                  <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_Font_Weight">Order within </span>
-                  19hrs and 47min
-                  <span class="Cont4_Decrease_Font_Weight">to arrive </span>
-                  <span class="green1">Tomorrow </span><br />
-                  <img
-                    src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
-                  <br />
-                  &nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
-                  <span class="green1">Jan 18</span>
-                </label>
-              </div>
-            </div>
-          </div>
-  
-          <button id="ADD_TO_CART">ADD TO CART</button>
-        </div>
-      </div>
-      <div class="One">
-        <div class="One_One">
-          <div class="img_for_One_One">
-            <img
-              src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/"
-              alt=""
-            />
-          </div>
-  
-          <div class="img_for_One_One2">
-            <h2 class="H2_One">Continental Radiator Hose D72592</h2>
-            <a href="" class="a_With_Black">Shop All Continental</a>
-  
-            <div class="starsCont">
-              <div class="starCont1">
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-                <img src="images/icons8-star-50.png" alt="" class="stars" />
-              </div>
-              <div class="starCont2">
-                <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
-                <!-- <a href="" class="a_With_Black">Write A Review</a> -->
-              </div>
-            </div>
-            <br />
-            <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
-            <span>&#124;</span>
-            <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
-  
-            <div class="One_cont2">
-              <img
-                src="https://www.autozone.com/images/warranty/1-year-warranty.svg"
-                alt=""
-              />
-              <a href="" class="a_With_Black">1-Year Warranty</a>
-            </div>
-            <br />
-            <br />
-          </div>
-        </div>
-  
-        <div class="One_Two">
-          <div class="One_Two_One">
-            <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
-            <p>&nbsp; Free Next Day Delivery Eligible</p>
-          </div>
-  
-          <hr />
-  
-          <div class="One_cont3">
-            <div class="One_cont3_one">
-              <span class="little_dollar">$</span
-              ><span class="big_dollar">239</span
-              ><span class="little_dollar">99</span>
-            </div>
-          </div>
-          <p>
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
-              alt=""
-            />
-            <span
-              >&nbsp; Pay in 4 interest-free payments on purchases of
-              $30-$1,500.<a href="" class="a_Colored">Learn More</a></span
-            >
-          </p>
-          <div class="One_cont4">
-            <div class="One_cont4_One">
-              <div class="One_cont4_One_One">
-                <input type="radio" name="radio1" id="radio1" />
-              </div>
-              <div class="One_cont4_One_Two">
-                <label for="radio"
-                  >Free In-Store or Curbside Pick Up <br />
-                  <span class="red1">Not Available at 4394 Summer Ave</span>
-                  <br /><span class="green1">Available near you at 23</span>&nbsp;
-                  <a href="" class="Cont4_small"> Nearby Stores</a></label
-                >
-              </div>
-            </div>
-  
-            <div class="One_cont4_Two">
-              <div class="One_cont4_Two_One">
-                <input type="radio" name="radio2" id="radio2" />
-              </div>
-              <div class="One_cont4_Two_Two">
-                <label for="radio"
-                  >Home Delivery <br />
-                  <img
-                    src="https://www.autozone.com/images/ndd-icon.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Delivery_Truck"
-                    >Free Next Day Delivery Eligible
-                  </span>
-                  <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_Font_Weight">Order within </span>
-                  19hrs and 47min
-                  <span class="Cont4_Decrease_Font_Weight">to arrive </span>
-                  <span class="green1">Tomorrow </span><br />
-                  <img
-                    src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg"
-                    alt=""
-                  />
-                  <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
-                  <br />
-                  &nbsp; &nbsp;&nbsp;
-                  <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
-                  <span class="green1">Jan 18</span>
-                </label>
-              </div>
-            </div>
-          </div>
-  
-          <button id="ADD_TO_CART">ADD TO CART</button>
-        </div>
+        <button id="ADD_TO_CART">ADD TO CART</button>
       </div>
     </div>
+    <div class="One">
+      <div class="One_One">
+        <div class="img_for_One_One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/" alt="" />
+        </div>
 
-    <!-- empty append -->
-    <!--  -->
-    <div class="pagination">
-      <span>Prev</span>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-      <span>...</span>
-      <button>16</button>
-      <button>17</button>
-      <button>18</button>
-      <button>19</button>
-      <span>Next</span>
-    </div>
-    <div class="desc">
-      <div class="desc-heading">
-        <h2>ABOUT</h2>
-        <h1>CAR BATTERY</h1>
+        <div class="img_for_One_One2">
+          <h2 class="H2_One">Continent Radiator Hose D72592</h2>
+          <a href="" class="a_With_Black">Shop All Continental</a>
+
+          <div class="starsCont">
+            <div class="starCont1">
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+            </div>
+            <div class="starCont2">
+              <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
+              <!-- <a href="" class="a_With_Black">Write A Review</a> -->
+            </div>
+          </div>
+          <br />
+          <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
+          <span>&#124;</span>
+          <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
+
+          <div class="One_cont2">
+            <img src="https://www.autozone.com/images/warranty/1-year-warranty.svg" alt="" />
+            <a href="" class="a_With_Black">1-Year Warranty</a>
+          </div>
+          <br />
+          <br />
+        </div>
       </div>
-      <div class="desc-summar">
-        <p>
-          Get a dependable car battery from AutoZone. With proven tough coverage
-          from Duralast, premium performance from Optima and Odyssey, and
-          economical buys from Valucraft, AutoZone has the right car batteries
-          you need to stay on the road.
-        </p>
-        <p>
-          Proven tough Duralast batteries fit most modern makes and models, for
-          everyday driving and performance. They are perfect
-          <a href="#">car batteries for Honda Civic</a> or
-          <a href="#"> Ford Mustang battery replacement</a>. Backed with a
-          two-year nationwide warranty, you can drive confidently with rugged
-          Duralast dependability.
-        </p>
-        <h3>Which Kind of Car Battery Should I Buy?</h3>
-        <p>
-          Knowing how to choose a good car battery is probably one of the most
-          important things you can do for your car. You want to make sure that
-          it runs smoothly so that you can get years of use out of it
-        </p>
-        <p>
-          Go with a Duralast Gold or Platinum Battery for premium performance
-          and extra power for high-energy consumption vehicles. Duralast Gold
-          and Platinum Batteries carry three-year nationwide warranties. For
-          extreme or specialty performance, AutoZone carries Odyssey performance
-          batteries and Optima AGM batteries. For an auto battery replacement at
-          the lowest price, Valucraft batteries can get you back on the road
-          with the lowest impact on your wallet. We also have Econocraft
-          batteries with prices starting at $69.99.
-        </p>
-        <p>
-          Make sure that you choose the right size battery. When you need to buy
-          a new car battery, make sure that you choose the one that's the
-          perfect fit and type for your specific car. Car batteries are
-          available in a lot of different sizes and types, so you need to choose
-          one that works with your particular car’s make and model.
-        </p>
-        <h3>Why Should I Change my Battery?</h3>
-        <p>
-          Car batteries wear out over time, and extremely hot or cold weather
-          can speed up a good battery’s demise. The cold is commonly thought of
-          as a killer of batteries, but that's because the it takes more
-          exertion. Typically these batteries lose strength before the winter,
-          and then finally fail when trying to start up the engine in the cold.
-        </p>
-        <h3>How Does a Car Battery Work?</h3>
-        <p>
-          A battery is one of the most important parts of your car. Without it,
-          a car cannot move at all. The battery works by taking an electric
-          current and using it to power the motor to start the engine, which
-          then gets the car going.
-        </p>
-        <p>
-          The cathode and anode are the respective positively and negatively
-          charged sides of the battery, and the electrolyte is a buffer between
-          the two. The chemical reactions inside cause a buildup of electrons in
-          the anode. Just like magnets, these similarly charged particles repel
-          one another, but are blocked from moving to the other side of the
-          battery by the electrolyte.
-        </p>
-        <p>
-          That means that negatively charged particles need to travel through
-          something external to the battery to circumvent the electrolyte and
-          reach the cathode, where particles carry a positive charge.
-        </p>
-        <p>
-          That’s where your car comes in. Your vehicle’s electrical system
-          provides a path for electrons to travel when the positive and negative
-          terminals are hooked up, and this travel provides electrical current
-          to your vehicle.
-        </p>
-        <p>
-          You can learn more about how car batteries work and how you can work
-          on them from out helpful guides below:
-        </p>
 
-        <p>-<a href="#"> How to tell if your car's battery is dead</a></p>
-        <p>-<a href="#">What to do if your battery is dead</a></p>
-        <p>-<a href="#">How to jump your car's battery</a></p>
 
-        <h3>How to Identify a Faulty Battery</h3>
+
+
+      <div class="One_Two">
+        <div class="One_Two_One">
+          <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+          <p>&nbsp; Free Next Day Delivery Eligible</p>
+        </div>
+
+        <hr />
+
+        <div class="One_cont3">
+          <div class="One_cont3_one">
+            <span class="little_dollar">$</span><span class="big_dollar">349</span><span class="little_dollar">99</span>
+
+          </div>
+        </div>
         <p>
-          There are several ways that you can figure out how to identify a
-          faulty battery. Check its age. The bottom line is that older batteries
-          have many more issues than younger batteries and are more likely to
-          fail. If your battery has been in your car for several years, it's
-          probably best to make the assumption that it needs to be changed.
-          Batteries wear down over time due to things like multiple cycles of
-          discharging. They can also break down over time if they’re constantly
-          exposed to extreme temperatures or temperature changes.
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
+            alt="" />
+          <span>&nbsp; Pay in 4 interest-free payments on purchases of
+            $30-$1,500.<a href="" class="a_Colored">Learn More</a></span>
         </p>
-        <p>
-          Another sign that it's time to get a new battery is if the battery is
-          slow to start. This means that when you get into the car and turn the
-          key, the engine doesn't turn over. It could also make a strange sound
-          before it finally does turn over.
-        </p>
-        <h3>How Long Does an Auto Battery Last?</h3>
-        <p>
-          Most people ask,<a href="#"> How long does an auto battery last?</a>
-          because they want to be prepared ahead of time. In general, car
-          batteries last anywhere from three to five years. There are several
-          factors that will determine how long your battery will last.
-        </p>
-        <p>
-          If you drive in extreme temperatures, the exposure to those temps will
-          have a huge impact on the life of the battery. If you're constantly on
-          the road taking the car for long trips, that's another thing that
-          could affect your battery's lifespan. If your alternator and drive
-          belt are starting to break down, those are additional issues that
-          could shorten your battery’s life span.
-        </p>
-        <p>
-          You may have reached the five-year point with no issues. This is
-          because many of the latest batteries are designed to work right up
-          until the point that they fail. This means that you're unlikely to get
-          a lot of warning signs before the battery dies. This could be
-          particularly bad if you’re nowhere near help.
-        </p>
-        <p>
-          Most batteries last 3-5 years. If your battery is 4 years old or
-          older, your car or truck battery is at risk. If you’re worried,
-          AutoZone offers free battery testing and charging service to check out
-          your current battery. We'll even take care of the old one with battery
-          recycling. When it’s time for a replacement, we’ve got the right
-          battery to get you back on the road. It's safe to assume that after
-          five years you need to get a new battery.
-        </p>
+        <div class="One_cont4">
+          <div class="One_cont4_One">
+            <div class="One_cont4_One_One">
+              <input type="radio" name="radio1" id="radio1" />
+            </div>
+            <div class="One_cont4_One_Two">
+              <label for="radio">Free In-Store or Curbside Pick Up <br />
+                <span class="red1">Not Available at 4394 Summer Ave</span>
+                <br /><span class="green1">Available near you at 23</span>&nbsp;
+                <a href="" class="Cont4_small"> Nearby Stores</a></label>
+            </div>
+          </div>
+
+          <div class="One_cont4_Two">
+            <div class="One_cont4_Two_One">
+              <input type="radio" name="radio2" id="radio2" />
+            </div>
+            <div class="One_cont4_Two_Two">
+              <label for="radio">Home Delivery <br />
+                <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+                <span class="Cont4_Delivery_Truck">Free Next Day Delivery Eligible
+                </span>
+                <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_Font_Weight">Order within </span>
+                19hrs and 47min
+                <span class="Cont4_Decrease_Font_Weight">to arrive </span>
+                <span class="green1">Tomorrow </span><br />
+                <img src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg" alt="" />
+                <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
+                <br />
+                &nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
+                <span class="green1">Jan 18</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button id="ADD_TO_CART">ADD TO CART</button>
       </div>
     </div>
-    <!-- End Party -->
-      <h1 id="recom">RECOMMENDED FOR YOU</h1>
-      <hr id="hr">
-    <div  class="Between_One_And_Two" >
-      <img src="https://www.autozone.com/images/right-arrow-grey.svg" alt="" width="5%" id="backword">
-      <div class="Between_One_And_Two_Grid"  id="Main_Insert">
-          <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
+    <div class="One">
+      <div class="One_One">
+        <div class="img_for_One_One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/" alt="" />
+        </div>
 
-              <div><p>Continental Upper Radiator Hose B71749</p></div>
+        <div class="img_for_One_One2">
+          <h2 class="H2_One">Continental Radiator Hose D72592</h2>
+          <a href="" class="a_With_Black">Shop All Continental</a>
 
-              <div >
-                  <div class="Between_One_And_Two_Cont1">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      
-                      <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-      
-                  </div>
-      
-                  <div class="Between_One_And_Two_Cont2">
-                      <div><span class="little_dollar2">$</span><span class="big_dollar2">261</span><span class="little_dollar2">99</span></div>
-                  </div>
-              </div>
-  
-              
+          <div class="starsCont">
+            <div class="starCont1">
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+            </div>
+            <div class="starCont2">
+              <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
+              <!-- <a href="" class="a_With_Black">Write A Review</a> -->
+            </div>
           </div>
-          <div>
-              <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-              
-              <div><p>Rein Upper Radiator Hose CHR0406R</p></div>
+          <br />
+          <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
+          <span>&#124;</span>
+          <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
 
-              <div>
-                  <div class="Between_One_And_Two_Cont1">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      
-                      <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-      
-                  </div>
-      
-                  <div class="Between_One_And_Two_Cont2">
-                      <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                  </div>
-              </div>
-  
-              
+          <div class="One_cont2">
+            <img src="https://www.autozone.com/images/warranty/1-year-warranty.svg" alt="" />
+            <a href="" class="a_With_Black">1-Year Warranty</a>
           </div>
-          <div>
-              <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H9-AGM/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-              
-              <div><p>Duralast Gold Battery H7-DLG 94R 800 CCA</p></div>
+          <br />
+          <br />
+        </div>
+      </div>
 
-              <div><div class="Between_One_And_Two_Cont1">
-                  <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                  <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                  <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                  <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                  <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                  
-                  <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-  
-              </div>
-  
-              <div class="Between_One_And_Two_Cont2">
-                  <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-              </div></div>
-  
-              
-          </div>  
-          <div>
-              <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/nwi/510108/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-              
-              <div><p>Gumout Fuel Injector Cleaner 12OZ</p></div>
-  
-              <div>
-                  <div class="Between_One_And_Two_Cont1">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      
-                      <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-      
-                  </div>
-      
-                  <div class="Between_One_And_Two_Cont2">
-                      <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                  </div>
-              </div>
+      <div class="One_Two">
+        <div class="One_Two_One">
+          <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+          <p>&nbsp; Free Next Day Delivery Eligible</p>
+        </div>
+
+        <hr />
+
+        <div class="One_cont3">
+          <div class="One_cont3_one">
+            <span class="little_dollar">$</span><span class="big_dollar">209</span><span class="little_dollar">49</span>
           </div>
-          <div>
-              <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-DLG/image/2/" alt="" class="Between_One_And_Two_Img1" style="border: none;"></div>
-              
-              <div><p>Continental Radiator Hose E72714</p></div>
-  
-              <div>
-                  <div class="Between_One_And_Two_Cont1">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      
-                      <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-      
-                  </div>
-      
-                  <div class="Between_One_And_Two_Cont2">
-                      <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                  </div>
-              </div>
+        </div>
+        <p>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
+            alt="" />
+          <span>&nbsp; Pay in 4 interest-free payments on purchases of
+            $30-$1,500.<a href="" class="a_Colored">Learn More</a></span>
+        </p>
+        <div class="One_cont4">
+          <div class="One_cont4_One">
+            <div class="One_cont4_One_One">
+              <input type="radio" name="radio1" id="radio1" />
+            </div>
+            <div class="One_cont4_One_Two">
+              <label for="radio">Free In-Store or Curbside Pick Up <br />
+                <span class="red1">Not Available at 4394 Summer Ave</span>
+                <br /><span class="green1">Available near you at 23</span>&nbsp;
+                <a href="" class="Cont4_small"> Nearby Stores</a></label>
+            </div>
           </div>
-          <div>
-              <div class="One">
-                  <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/65-DL/image/2/" alt="" class="Between_One_And_Two_Img1" width="50%">
-              </div>
 
-              <div class="Two"><p>AUSBHBDH</p></div>
-
-              <div>
-                  <div class="Between_One_And_Two_Cont1">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;"> 
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                      
-                      <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-      
-                  </div>
-      
-                  <div class="Between_One_And_Two_Cont2">
-                      <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                  </div>
-
-              </div>
-              
-              
-  
-              
+          <div class="One_cont4_Two">
+            <div class="One_cont4_Two_One">
+              <input type="radio" name="radio2" id="radio2" />
+            </div>
+            <div class="One_cont4_Two_Two">
+              <label for="radio">Home Delivery <br />
+                <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+                <span class="Cont4_Delivery_Truck">Free Next Day Delivery Eligible
+                </span>
+                <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_Font_Weight">Order within </span>
+                19hrs and 47min
+                <span class="Cont4_Decrease_Font_Weight">to arrive </span>
+                <span class="green1">Tomorrow </span><br />
+                <img src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg" alt="" />
+                <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
+                <br />
+                &nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
+                <span class="green1">Jan 18</span>
+              </label>
+            </div>
           </div>
-          <!-- <div>
+        </div>
+
+        <button id="ADD_TO_CART">ADD TO CART</button>
+      </div>
+    </div>
+    <div class="One">
+      <div class="One_One">
+        <div class="img_for_One_One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H8-AGM/image/2/" alt="" />
+        </div>
+
+        <div class="img_for_One_One2">
+          <h2 class="H2_One">Continental Radiator Hose D72592</h2>
+          <a href="" class="a_With_Black">Shop All Continental</a>
+
+          <div class="starsCont">
+            <div class="starCont1">
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+              <img src="images/icons8-star-50.png" alt="" class="stars" />
+            </div>
+            <div class="starCont2">
+              <a href="" class="a_With_Black">5.0(3)</a> &nbsp;
+              <!-- <a href="" class="a_With_Black">Write A Review</a> -->
+            </div>
+          </div>
+          <br />
+          <span class="One_span_One">Part #D72592 &nbsp; &nbsp; </span>
+          <span>&#124;</span>
+          <span class="One_span_One">&nbsp; &nbsp; SKU #280706</span>
+
+          <div class="One_cont2">
+            <img src="https://www.autozone.com/images/warranty/1-year-warranty.svg" alt="" />
+            <a href="" class="a_With_Black">1-Year Warranty</a>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div class="One_Two">
+        <div class="One_Two_One">
+          <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+          <p>&nbsp; Free Next Day Delivery Eligible</p>
+        </div>
+
+        <hr />
+
+        <div class="One_cont3">
+          <div class="One_cont3_one">
+            <span class="little_dollar">$</span><span class="big_dollar">229</span><span class="little_dollar">99</span>
+          </div>
+        </div>
+        <p>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+"
+            alt="" />
+          <span>&nbsp; Pay in 4 interest-free payments on purchases of
+            $30-$1,500.<a href="" class="a_Colored">Learn More</a></span>
+        </p>
+        <div class="One_cont4">
+          <div class="One_cont4_One">
+            <div class="One_cont4_One_One">
+              <input type="radio" name="radio1" id="radio1" />
+            </div>
+            <div class="One_cont4_One_Two">
+              <label for="radio">Free In-Store or Curbside Pick Up <br />
+                <span class="red1">Not Available at 4394 Summer Ave</span>
+                <br /><span class="green1">Available near you at 23</span>&nbsp;
+                <a href="" class="Cont4_small"> Nearby Stores</a></label>
+            </div>
+          </div>
+
+          <div class="One_cont4_Two">
+            <div class="One_cont4_Two_One">
+              <input type="radio" name="radio2" id="radio2" />
+            </div>
+            <div class="One_cont4_Two_Two">
+              <label for="radio">Home Delivery <br />
+                <img src="https://www.autozone.com/images/ndd-icon.svg" alt="" />
+                <span class="Cont4_Delivery_Truck">Free Next Day Delivery Eligible
+                </span>
+                <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_Font_Weight">Order within </span>
+                19hrs and 47min
+                <span class="Cont4_Decrease_Font_Weight">to arrive </span>
+                <span class="green1">Tomorrow </span><br />
+                <img src="https://www.autozone.com/images/stdDeliveryIcon-16-16.svg" alt="" />
+                <span class="Cont4_Decrease_FontSize">Standard Delivery</span>
+                <br />
+                &nbsp; &nbsp;&nbsp;
+                <span class="Cont4_Decrease_FontSize">Est. Delivery </span>
+                <span class="green1">Jan 18</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button id="ADD_TO_CART">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- empty append -->
+  <!--  -->
+  <div class="pagination">
+    <span>Prev</span>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <span>...</span>
+    <button>16</button>
+    <button>17</button>
+    <button>18</button>
+    <button>19</button>
+    <span>Next</span>
+  </div>
+  <div class="desc">
+    <div class="desc-heading">
+      <h2>ABOUT</h2>
+      <h1>CAR BATTERY</h1>
+    </div>
+    <div class="desc-summar">
+      <p>
+        Get a dependable car battery from AutoZone. With proven tough coverage
+        from Duralast, premium performance from Optima and Odyssey, and
+        economical buys from Valucraft, AutoZone has the right car batteries
+        you need to stay on the road.
+      </p>
+      <p>
+        Proven tough Duralast batteries fit most modern makes and models, for
+        everyday driving and performance. They are perfect
+        <a href="#">car batteries for Honda Civic</a> or
+        <a href="#"> Ford Mustang battery replacement</a>. Backed with a
+        two-year nationwide warranty, you can drive confidently with rugged
+        Duralast dependability.
+      </p>
+      <h3>Which Kind of Car Battery Should I Buy?</h3>
+      <p>
+        Knowing how to choose a good car battery is probably one of the most
+        important things you can do for your car. You want to make sure that
+        it runs smoothly so that you can get years of use out of it
+      </p>
+      <p>
+        Go with a Duralast Gold or Platinum Battery for premium performance
+        and extra power for high-energy consumption vehicles. Duralast Gold
+        and Platinum Batteries carry three-year nationwide warranties. For
+        extreme or specialty performance, AutoZone carries Odyssey performance
+        batteries and Optima AGM batteries. For an auto battery replacement at
+        the lowest price, Valucraft batteries can get you back on the road
+        with the lowest impact on your wallet. We also have Econocraft
+        batteries with prices starting at $69.99.
+      </p>
+      <p>
+        Make sure that you choose the right size battery. When you need to buy
+        a new car battery, make sure that you choose the one that's the
+        perfect fit and type for your specific car. Car batteries are
+        available in a lot of different sizes and types, so you need to choose
+        one that works with your particular car’s make and model.
+      </p>
+      <h3>Why Should I Change my Battery?</h3>
+      <p>
+        Car batteries wear out over time, and extremely hot or cold weather
+        can speed up a good battery’s demise. The cold is commonly thought of
+        as a killer of batteries, but that's because the it takes more
+        exertion. Typically these batteries lose strength before the winter,
+        and then finally fail when trying to start up the engine in the cold.
+      </p>
+      <h3>How Does a Car Battery Work?</h3>
+      <p>
+        A battery is one of the most important parts of your car. Without it,
+        a car cannot move at all. The battery works by taking an electric
+        current and using it to power the motor to start the engine, which
+        then gets the car going.
+      </p>
+      <p>
+        The cathode and anode are the respective positively and negatively
+        charged sides of the battery, and the electrolyte is a buffer between
+        the two. The chemical reactions inside cause a buildup of electrons in
+        the anode. Just like magnets, these similarly charged particles repel
+        one another, but are blocked from moving to the other side of the
+        battery by the electrolyte.
+      </p>
+      <p>
+        That means that negatively charged particles need to travel through
+        something external to the battery to circumvent the electrolyte and
+        reach the cathode, where particles carry a positive charge.
+      </p>
+      <p>
+        That’s where your car comes in. Your vehicle’s electrical system
+        provides a path for electrons to travel when the positive and negative
+        terminals are hooked up, and this travel provides electrical current
+        to your vehicle.
+      </p>
+      <p>
+        You can learn more about how car batteries work and how you can work
+        on them from out helpful guides below:
+      </p>
+
+      <p>-<a href="#"> How to tell if your car's battery is dead</a></p>
+      <p>-<a href="#">What to do if your battery is dead</a></p>
+      <p>-<a href="#">How to jump your car's battery</a></p>
+
+      <h3>How to Identify a Faulty Battery</h3>
+      <p>
+        There are several ways that you can figure out how to identify a
+        faulty battery. Check its age. The bottom line is that older batteries
+        have many more issues than younger batteries and are more likely to
+        fail. If your battery has been in your car for several years, it's
+        probably best to make the assumption that it needs to be changed.
+        Batteries wear down over time due to things like multiple cycles of
+        discharging. They can also break down over time if they’re constantly
+        exposed to extreme temperatures or temperature changes.
+      </p>
+      <p>
+        Another sign that it's time to get a new battery is if the battery is
+        slow to start. This means that when you get into the car and turn the
+        key, the engine doesn't turn over. It could also make a strange sound
+        before it finally does turn over.
+      </p>
+      <h3>How Long Does an Auto Battery Last?</h3>
+      <p>
+        Most people ask,<a href="#"> How long does an auto battery last?</a>
+        because they want to be prepared ahead of time. In general, car
+        batteries last anywhere from three to five years. There are several
+        factors that will determine how long your battery will last.
+      </p>
+      <p>
+        If you drive in extreme temperatures, the exposure to those temps will
+        have a huge impact on the life of the battery. If you're constantly on
+        the road taking the car for long trips, that's another thing that
+        could affect your battery's lifespan. If your alternator and drive
+        belt are starting to break down, those are additional issues that
+        could shorten your battery’s life span.
+      </p>
+      <p>
+        You may have reached the five-year point with no issues. This is
+        because many of the latest batteries are designed to work right up
+        until the point that they fail. This means that you're unlikely to get
+        a lot of warning signs before the battery dies. This could be
+        particularly bad if you’re nowhere near help.
+      </p>
+      <p>
+        Most batteries last 3-5 years. If your battery is 4 years old or
+        older, your car or truck battery is at risk. If you’re worried,
+        AutoZone offers free battery testing and charging service to check out
+        your current battery. We'll even take care of the old one with battery
+        recycling. When it’s time for a replacement, we’ve got the right
+        battery to get you back on the road. It's safe to assume that after
+        five years you need to get a new battery.
+      </p>
+    </div>
+  </div>
+  <!-- End Party -->
+  <h1 id="recom">RECOMMENDED FOR YOU</h1>
+  <hr id="hr">
+  <div class="Between_One_And_Two">
+    <img src="https://www.autozone.com/images/right-arrow-grey.svg" alt="" width="5%" id="backword">
+    <div class="Between_One_And_Two_Grid" id="Main_Insert">
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Continental Upper Radiator Hose B71749</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">26</span><span
+                class="little_dollar2">99</span></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-AGM/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Rein Upper Radiator Hose CHR0406R</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span
+                class="little_dollar2">49</span></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H9-AGM/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Duralast Gold Battery H7-DLG 94R 800 CCA</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">14</span><span
+                class="little_dollar2">9</span></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/nwi/510108/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Gumout Fuel Injector Cleaner 12OZ</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">13</span><span
+                class="little_dollar2">49</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H7-DLG/image/2/" alt=""
+            class="Between_One_And_Two_Img1" style="border: none;"></div>
+
+        <div>
+          <p>Continental Radiator Hose E72714</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">11</span><span
+                class="little_dollar2">49</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/" alt=""
+            class="Between_One_And_Two_Img1">
+        </div>
+
+        <div class="Two">
+          <p>AUSBHBDH</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">14</span><span
+                class="little_dollar2">49</span></div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <!-- <div>
               <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/" alt="" class="Between_One_And_Two_Img1">
               <p>Rein Upper Radiator Hose CHR04</p>
   
@@ -1033,162 +1062,185 @@
                   <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
               </div>
           </div> -->
-          
-      </div>
-      <img src="https://www.autozone.com/images/left-arrow-grey.svg" alt="" width="5%" id="forward">
+
+    </div>
+    <img src="https://www.autozone.com/images/left-arrow-grey.svg" alt="" width="5%" id="forward">
   </div>
 
   <!-- End Part-2 -->
 
   <h1 id="recom">OTHER CUSTOMERS BOUGHT</h1>
-      <hr id="hr">
+  <hr id="hr">
   <div class="Between_One_And_Two">
     <img src="https://www.autozone.com/images/right-arrow-grey.svg" alt="" width="5%" id="backword">
-    <div class="Between_One_And_Two_Grid"  id="Main_Insert">
+    <div class="Between_One_And_Two_Grid" id="Main_Insert">
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W305Q/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
         <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W305Q/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-            
-            <div><p>Continental Upper Radiator Hose B71749</p></div>
-
-            <div>
-                <div class="Between_One_And_Two_Cont1">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    
-                    <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-    
-                </div>
-    
-                <div class="Between_One_And_Two_Cont2">
-                    <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                </div>
-            </div>
-
-            
+          <p>Continental Upper Radiator Hose B71749</p>
         </div>
+
         <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S7317XL/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-            
-            <div><p>Rein Upper Radiator Hose CHR0406R</p></div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
 
-            <div>
-                <div class="Between_One_And_Two_Cont1">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    
-                    <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-    
-                </div>
-    
-                <div class="Between_One_And_Two_Cont2">
-                    <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                </div>
-            </div>
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
 
-            
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span
+                class="little_dollar2">49</span></div>
+          </div>
         </div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S7317XL/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
         <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/H11XV-2/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-            
-            <div><p>Continental Upper Radiator Hose E71989</p></div>
-
-            <div><div class="Between_One_And_Two_Cont1">
-                <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                
-                <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-
-            </div>
-
-            <div class="Between_One_And_Two_Cont2">
-                <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-            </div></div>
-
-            
+          <p>Rein Upper Radiator Hose CHR0406R</p>
         </div>
+
         <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPSYN0W205Q/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-            
-            <div><p>Continental Upper Radiator Hose E72628</p></div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
 
-            <div>
-                <div class="Between_One_And_Two_Cont1">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    
-                    <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-    
-                </div>
-    
-                <div class="Between_One_And_Two_Cont2">
-                    <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                </div>
-            </div>
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">9</span><span
+                class="little_dollar2">49</span></div>
+          </div>
         </div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/H11XV-2/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
         <div>
-            <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ags/BK-1/image/2/" alt="" class="Between_One_And_Two_Img1"></div>
-            
-            <div><p>Continental Radiator Hose E72714</p></div>
-
-            <div>
-                <div class="Between_One_And_Two_Cont1">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    
-                    <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-    
-                </div>
-    
-                <div class="Between_One_And_Two_Cont2">
-                    <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                </div>
-            </div>
+          <p>Continental Upper Radiator Hose E71989</p>
         </div>
+
         <div>
-            <div class="One">
-                <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ags/BK-1/image/2/" alt="" class="Between_One_And_Two_Img1">
-            </div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
 
-            <div class="Two"><p>Continental Upper Radiator Hose E72484</p></div>
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
 
-            <div>
-                <div class="Between_One_And_Two_Cont1">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;"> 
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
-                    
-                    <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
-    
-                </div>
-    
-                <div class="Between_One_And_Two_Cont2">
-                    <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
-                </div>
+          </div>
 
-            </div>
-            
-            
-
-            
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">19</span><span
+                class="little_dollar2">29</span></div>
+          </div>
         </div>
-        <!-- <div>
+
+
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPSYN0W205Q/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Continental Upper Radiator Hose E72628</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">16</span><span
+                class="little_dollar2">39</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div><img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ags/BK-1/image/2/" alt=""
+            class="Between_One_And_Two_Img1"></div>
+
+        <div>
+          <p>Continental Radiator Hose E72714</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">75</span><span
+                class="little_dollar2">79</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+        <div class="One">
+          <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/ags/BK-1/image/2/" alt=""
+            class="Between_One_And_Two_Img1">
+        </div>
+
+        <div class="Two">
+          <p>Continental Upper Radiator Hose E72484</p>
+        </div>
+
+        <div>
+          <div class="Between_One_And_Two_Cont1">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+            <img src="images/icons8-star-50.png" alt="" style="width: 8%;">
+
+            <span class="Span_Inside_Between_One_And_Two_Cont1">5.0</span><span>(3)</span>
+
+          </div>
+
+          <div class="Between_One_And_Two_Cont2">
+            <div><span class="little_dollar2">$</span><span class="big_dollar2">25</span><span
+                class="little_dollar2">59</span></div>
+          </div>
+
+        </div>
+       </div> -->
+
+      <!-- <div>
             <img src="https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/" alt="" class="Between_One_And_Two_Img1">
             <p>Rein Upper Radiator Hose CHR04</p>
 
@@ -1207,11 +1259,831 @@
                 <div><span class="little_dollar2">$</span><span class="big_dollar2">15</span><span class="little_dollar2">49</span></div>
             </div>
         </div> -->
-        
+
     </div>
     <img src="https://www.autozone.com/images/left-arrow-grey.svg" alt="" width="5%" id="forward">
-</div>
+  </div>
+
+  <div id="popular">
+
+    <div>
+      <h3>Popular Brands</h3>
+      <li>Duralast Gold Chassis</li>
+      <li>AC Pro</li>
+      <li> AC Delco</li>
+      <li> Avalanche</li>
+      <li>Castrol</li>
+      <li>Show All</li>
+    </div>
+
+    <div>
+      <h3>Popular Makes</h3>
+      <li>Ford Parts</li>
+      <li>Chevy Parts</li>
+      <li> Honda Parts</li>
+      <li>Toyota Parts</li>
+      <li>Dodge Parts</li>
+      <li>Show All</li>
+    </div>
+    <div>
+      <h3>Popular Models</h3>
+      <li>Honda Accord Parts</li>
+      <li>Honda Civic Parts</li>
+      <li>Ford F150 Parts</li>
+      <li>Chevy Silverado 1500 Parts</li>
+      <li>Toyota Camry Partss</li>
+      <li>Show All</li>
+    </div>
 
 
-  </body>
+    <div>
+      <h3>Advice and How-To's</h3>
+      <li>What Does the Battery light Mean?</li>
+      <li>How Long Does an Oil Change Take?</li>
+      <li>Why is My Check Engine Light On?</li>
+      <li>How to Replace Brakes</li>
+      <li>How to Replace a Car Battery</li>
+      <li>Show All</li>
+    </div>
+
+  </div>
+
+
+  <!-- ******************************************************************************************** -->
+
+
+  <div id="emaizone">
+    <div>
+      <h3> <i class="fa-regular fa-envelope"></i> GET IN THE ZONE</h3>
+    </div>
+
+    <div>
+      <p>Subscribe to get the latest deals, promotions, and offerings.</p>
+    </div>
+
+
+
+    <div>
+      <input type="email" placeholder="Email">
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+  <!-- ******************footer*************************************************** -->
+  <footer id="footer">
+    <div id="first">
+      <div class="fst"><img src="https://www.autozone.com/cdn/icons/az_icons/az_locator.svg" alt="">
+        <h3> Locate A Store</h3>
+      </div>
+
+      <div class="fst"><img src="https://www.autozone.com/images/footer/az-box.svg" alt="">
+        <h3> Track Your Order</h3>
+      </div>
+
+
+      <div class="fst"><img src="https://www.autozone.com/images/footer/az-compose.svg" alt="">
+        <h3>We're Hiring!</h3>
+      </div>
+      <!-- </div> -->
+
+      <!-- <hr> -->
+      <div id="social">
+
+        <div>
+          <h1><i class="fa-brands fa-facebook"></i></h1>
+        </div>
+        <div>
+          <h1> <i class="fa-brands fa-twitter"></i></h1>
+        </div>
+
+        <div>
+          <h1> <i class="fa-brands fa-youtube"></i></h1>
+        </div>
+        <div>
+          <h1><i class="fa-brands fa-instagram"></i></h1>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div id="gridpart">
+      <div>
+        <h2>SHOP</h2>
+        <li>AutoZone Locations</li>
+        <li>Vehicle Make</li>
+        <li>Vehicle Model</li>
+        <li>Shop All Brands</li>
+        <li>Vehicle VIN Lookup</li>
+        <li>Gift Cards</li>
+        <li>Discounts & Coupons</li>
+        <li>Local Store Ad</li>
+        <li>Featured Brands</li>
+
+      </div>
+      <div>
+        <h2>PRODUCTS</h2>
+        <li> Auto Parts</li>
+        <li>Interior Accessories</li>
+        <li>Exterior Accessories</li>
+        <li>Truck</li>
+        <li>Tools</li>
+        <li>Chemicals</li>
+        <li>Performance</li>
+
+      </div>
+      <div>
+        <h2>HELP</h2>
+        <li>Track My Order</li>
+        <li>Contact Us</li>
+        <li>My Account</li>
+        <li>FAQs</li>
+        <li>Return Policies</li>
+        <li>Product Recalls</li>
+        <li>Product Ingredient Disclosures</li>
+        <li>Web Accessibility</li>
+
+      </div>
+      <div>
+        <h2> ABOUT US</h2>
+        <li>Careers</li>
+        <li>About AutoZone</li>
+        <li>Investor Relations</li>
+        <li>Affiliate Program</li>
+        <li>Vendor Information</li>
+        <li>ESG</li>
+
+      </div>
+      <div>
+        <h2>SERVICES</h2>
+        <li>Buy Online, Pick Up in Store</li>
+        <li>Loan-A-Tool</li>
+        <li>In-Store Services</li>
+        <li>Repair Help</li>
+        <li>Mobile App</li>
+        <li>Find a Repair Shop</li>
+        <li>AutoZone Rewards</li>
+        <li>Sign Up for Text Messages</li>
+      </div>
+    </div>
+    <div id="other">
+      <h3>OTHER AUTOZONE SITES</h3>
+    </div>
+    <div id="zoner">
+      <div id="zo">
+        <div>
+          <h5>AutoZoner Services</h5>
+        </div>
+        <hr>
+        <div>
+          <h5>AutoZoner Benefits Login</h5>
+        </div>
+        <hr>
+        <div>
+          <h5>AutoZone Pro
+          </h5>
+        </div>
+        <hr>
+        <div>
+          <h5>ALLDATA diy</h5>
+        </div>
+        <hr>
+        <div>
+          <h5>ALLDATA Repair
+          </h5>
+        </div>
+        <hr>
+        <div>
+          <h5>Duralast</h5>
+        </div>
+        <hr>
+        <div>
+          <h5>Duralast</h5>
+        </div>
+        <hr>
+        <div>
+          <h5>AutoZone MX</h5>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <hr>
+    <div id="last">
+      <div id="pic">
+        <img src="https://www.autozone.com/images/footer/digicert.png" alt="">
+      </div>
+      <div>
+        <p>Terms & Conditions
+          Privacy Policy
+          Return Policy
+          CA Supply Chain Disclosure
+          Your California and Other State Law Privacy Rights <br>
+          Insurance & Risk Management
+        <p> Sitemap</p>
+        <p> © 2001-2023 AutoZone, Inc. All Rights Reserved</p>
+      </div>
+      <!-- </div> -->
+      <div id="apple">
+        <div>
+          <img src="https://www.autozone.com/cdn/images/B2C/US/media/Landing/MobileApp/app_store.svg" alt="">
+        </div>
+        <div>
+          <img src="https://www.autozone.com/cdn/images/B2C/US/media/Landing/MobileApp/google-play.svg" alt="">
+        </div>
+      </div>
+
+  </footer>
+
+</body>
+<script>
+  let p = document.getElementById("m")
+  let one = document.getElementById("onebtn")
+  let two = document.getElementById("twobtn")
+  let three = document.getElementById('threebtn')
+  let left = document.getElementById('left')
+
+
+  function onclickmenu() {
+
+    document.getElementById("manu").classList.toggle("icon");
+    //    body.style=position"fixed"
+
+
+
+
+    document.getElementById("sidebar").classList.toggle("change")
+    // document.getElementById("m").classList.t("c")
+    // c.InnerText="c";
+    // document.body.style.backgroundColor="blue"
+
+  }
+
+  // ******************************************************************************
+
+
+  let forward = document.getElementById('forward')
+  let backword = document.getElementById('backword')
+
+  let i = 0;
+
+  let mainAppend = document.getElementById('Main_Insert')
+
+
+
+  let itemData = [
+    [
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/prs/AF-2100/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/ags/BK-1/image/2/',
+        title: 'Prestone Antifreeze/Coolant Universal CONCENTRATE *10 Year/300K Mile Protection* 1 Gallon',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(634)',
+        dollarSign: '$',
+        dollar: '15',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/flo/10713BLK132/image/2/',
+        title: 'Turtle Wax Rubbing Compound Paste 10.5oz',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.6',
+        people: '(32)',
+        dollarSign: '$',
+        dollar: '6',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/prs/AF-2000/image/2/',
+        title: 'Duralast 800 Amp Portable Battery Jump Starter ',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.5',
+        people: '(316)',
+        dollarSign: '$',
+        dollar: '84',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/twx/T-230A/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/prs/AF-2100/image/2/',
+        title: 'Continental Upper Radiator Hose E72484',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '23',
+        dollarCents: '49'
+      }
+    ],
+
+    // 
+    [
+
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/scm/DL-800/image/2/',
+        title: 'Rein Upper Radiator Hose CHR0406R',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(13)',
+        dollarSign: '$',
+        dollar: '43',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/flo/10713BLK132/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/prs/AF-2000/image/2/',
+        title: 'Continental Upper Radiator Hose E72628',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.4',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '53',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/twx/T-230A/image/2/',
+        title: 'Continental Radiator Hose E72714',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7 ',
+        people: '(3)',
+        dollarSign: '$',
+        dollar: '45',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/prs/AF-2100/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/flo/OP-1/image/2/',
+        title: 'AGS Sil-Glyde Brake Lubricant 0.14oz',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(853)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '99'
+      }
+    ],
+
+
+    [
+
+
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/H11XV-2/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H6-AGM/image/2/',
+        title: 'Continental Upper Radiator Hose E72628',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.4',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '53',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/E72484/image/2/',
+        title: 'Continental Radiator Hose E72714',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7 ',
+        people: '(3)',
+        dollarSign: '$',
+        dollar: '45',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/crp/CHR0405R/image/2/',
+        title: 'Rein Upper Radiator Hose CHR0405R',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.1',
+        people: '(9)',
+        dollarSign: '$',
+        dollar: '61',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/B71749/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+
+        dollarCents: '49'
+      }
+    ],
+
+    // 
+
+    [
+
+
+
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/35-DLG/image/2/',
+        title: 'Continental Upper Radiator Hose E72628',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.4',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '53',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/pre/PWIFVDB/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '10',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W205Q/image/2/',
+        title: 'Continental Upper Radiator Hose E72484',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '23',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S6607XL/image/2/',
+        title: 'Rein Upper Radiator Hose CHR0405R',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.1',
+        people: '(9)',
+        dollarSign: '$',
+        dollar: '61',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/syl/9005XV-2/image/2/',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(13)',
+        dollarSign: '$',
+        dollar: '99',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPSYN0W205Q/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      }
+    ],
+
+
+    // 
+    [
+
+
+
+
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/pre/PWIFVDB/image/2/',
+        title: 'Hopkins Black Big Mouth with No-Mess Splash Guard Funnel',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.7',
+        people: '(106)',
+        dollarSign: '$',
+        dollar: '1',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
+        title: 'Continental Upper Radiator Hose E72484',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(5)',
+        dollarSign: '$',
+        dollar: '23',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/jci/H6-AGM/image/2/',
+        title: 'Rein Upper Radiator Hose CHR0405R',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.1',
+        people: '(9)',
+        dollarSign: '$',
+        dollar: '61',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/sxl/S7317XL/image/2/',
+        title: 'Continental Upper Radiator Hose E72633',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '5.0',
+        people: '(13)',
+        dollarSign: '$',
+        dollar: '99',
+        dollarCents: '99'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/dyc/D72592/image/2/',
+        title: 'Continental Upper Radiator Hose D72227',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.4',
+        people: '(32)',
+        dollarSign: '$',
+        dollar: '23',
+        dollarCents: '49'
+      },
+      {
+        img: 'https://contentinfo.autozone.com/znetcs/product-info/en/US/ctl/STPHME5W305Q/image/2/',
+        title: 'Dorman Hose 626-541',
+        starImg: ['images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png', 'images/icons8-star-50.png'],
+        space: '&nbsp;&nbsp;',
+        rating: '4.2',
+        people: '(116)',
+        dollarSign: '$',
+        dollar: '3',
+        dollarCents: '29'
+      }
+    ]
+  ]
+
+
+
+  forward.addEventListener('click', () => {
+    ForForward(itemData)
+  })
+
+  backword.addEventListener('click', () => {
+    ForBackword(itemData)
+  })
+
+
+
+  function ForBackword(arr) {
+    mainAppend.innerHTML = ''
+    if (i == 0) {
+      i = arr.length - 1
+    } else {
+      i--
+    }
+
+
+    arr[i].forEach((e, i) => {
+      let mainDiv = document.createElement('div')
+      let div1 = document.createElement('div')
+      let img1 = document.createElement('img')
+      img1.setAttribute('src', `${e.img}`)
+      img1.setAttribute('class', 'Between_One_And_Two_Img1')
+      div1.append(img1)
+
+      let div2 = document.createElement('div')
+      let p1 = document.createElement('p')
+      p1.innerText = e.title
+      div2.append(p1)
+
+      let div3 = document.createElement('div')
+      let div4 = document.createElement('div')
+      div4.setAttribute('class', 'Between_One_And_Two_Cont1')
+
+      for (let j = 0; j < e.starImg.length; j++) {
+        let img2 = document.createElement('img')
+        img2.setAttribute('src', `${e.starImg[j]}`)
+        div4.append(img2)
+      }
+      // let spaces = e.space
+      // div4.append(spaces)
+      // div4.append('&nbsp;&nbsp;')
+
+      let span1 = document.createElement('span')
+      span1.setAttribute('class', 'Span_Inside_Between_One_And_Two_Cont1')
+      span1.innerText = e.rating
+
+      let span2 = document.createElement('span')
+      span2.innerText = e.people
+
+      div4.append(span1, span2)
+
+
+
+
+      let div5 = document.createElement('div')
+      div5.setAttribute('class', 'Between_One_And_Two_Cont2')
+
+      let div6 = document.createElement('div')
+      let span3 = document.createElement('span')
+      span3.setAttribute('class', 'little_dollar2')
+      span3.innerText = e.dollarSign
+      let span4 = document.createElement('span')
+      span4.setAttribute('class', 'big_dollar2')
+      span4.innerText = e.dollar
+      let span5 = document.createElement('span')
+      span5.setAttribute('class', 'little_dollar2')
+      span5.innerText = e.dollarCents
+
+      div6.append(span3, span4, span5)
+      div5.append(div6)
+      div3.append(div4, div5)
+
+
+      mainDiv.append(div1, div2, div3)
+
+
+      mainAppend.append(mainDiv)
+
+
+
+
+    })
+
+  }
+
+  function ForForward() {
+    mainAppend.innerHTML = ''
+    if (i == 4) {
+      i = 0
+    } else {
+      i++
+    }
+
+
+    itemData[i].forEach((e, i) => {
+      let mainDiv = document.createElement('div')
+      let div1 = document.createElement('div')
+      let img1 = document.createElement('img')
+      img1.setAttribute('src', `${e.img}`)
+      img1.setAttribute('class', 'Between_One_And_Two_Img1')
+      div1.append(img1)
+
+      let div2 = document.createElement('div')
+      let p1 = document.createElement('p')
+      p1.innerText = e.title
+      div2.append(p1)
+
+      let div3 = document.createElement('div')
+      let div4 = document.createElement('div')
+      div4.setAttribute('class', 'Between_One_And_Two_Cont1')
+
+      for (let j = 0; j < e.starImg.length; j++) {
+        let img2 = document.createElement('img')
+        img2.setAttribute('src', `${e.starImg[j]}`)
+        div4.append(img2)
+      }
+      // let spaces = e.space
+      // div4.append(spaces)
+
+      let span1 = document.createElement('span')
+      span1.setAttribute('class', 'Span_Inside_Between_One_And_Two_Cont1')
+      span1.innerText = e.rating
+
+      let span2 = document.createElement('span')
+      span2.innerText = e.people
+
+      div4.append(span1, span2)
+
+
+
+
+      let div5 = document.createElement('div')
+      div5.setAttribute('class', 'Between_One_And_Two_Cont2')
+
+      let div6 = document.createElement('div')
+      let span3 = document.createElement('span')
+      span3.setAttribute('class', 'little_dollar2')
+      span3.innerText = e.dollarSign
+      let span4 = document.createElement('span')
+      span4.setAttribute('class', 'big_dollar2')
+      span4.innerText = e.dollar
+      let span5 = document.createElement('span')
+      span5.setAttribute('class', 'little_dollar2')
+      span5.innerText = e.dollarCents
+
+      div6.append(span3, span4, span5)
+      div5.append(div6)
+      div3.append(div4, div5)
+
+
+      mainDiv.append(div1, div2, div3)
+
+
+      mainAppend.append(mainDiv)
+
+
+
+
+    })
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
 </html>
